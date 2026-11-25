@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل السلامة والصحة المهنية</title>
+<meta name="description" content="مصطلحات إنجليزي بالعربي، ملخصات أبواب السلامة، وأسئلة مقابلات حسب كل موضوع.">
+<style>
+:root{
+  --bg:#f3f6f5;--card:#ffffff;--card-t:rgba(255,255,255,.82);--ink:#16232a;--muted:#5f6f76;
+  --brand:#0e7c66;--brand-ink:#0a5c4c;--soft:#e4f1ec;--acc:#f59e0b;
+  --warn:#8a5410;--warnbg:#fff7e6;--line:#e2e8e6;--r:16px;
+  --sh-sm:0 1px 2px rgba(16,35,42,.06),0 2px 8px rgba(16,35,42,.05);
+  --sh-md:0 6px 18px rgba(16,35,42,.10),0 2px 6px rgba(16,35,42,.06);
+}
+[data-theme="dark"]{
+  --bg:#0f1517;--card:#182227;--card-t:rgba(15,21,23,.82);--ink:#e7eeec;--muted:#9fb0b4;
+  --brand:#3bb89b;--brand-ink:#7fd6c0;--soft:#1c2f2b;--acc:#fbbf24;
+  --warn:#f0b25c;--warnbg:#2e2413;--line:#26333a;
+  --sh-sm:0 1px 2px rgba(0,0,0,.3),0 2px 8px rgba(0,0,0,.25);
+  --sh-md:0 6px 20px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic","Noto Sans Arabic","Segoe UI",Tahoma,"Noto Naskh Arabic",Arial,sans-serif;line-height:1.75;font-size:17px;transition:background .25s,color .25s}
+.skip{position:absolute;right:-999px}.skip:focus{right:8px;top:8px;background:var(--card);padding:8px;z-index:50;border-radius:8px}
+.en{direction:ltr;unicode-bidi:isolate;display:inline-block;font-family:system-ui,"Segoe UI",Arial,sans-serif}
+
+/* header */
+.top{position:sticky;top:0;background:var(--card-t);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:20;padding:10px 14px}
+.top-in{display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+.logo{vertical-align:-4px}
+.brand{font-weight:800;color:var(--brand);text-decoration:none;font-size:1.15rem;display:flex;align-items:center;gap:6px}
+.nav{display:flex;gap:4px;flex-wrap:wrap;overflow-x:auto}
+.nav a{padding:7px 14px;border-radius:99px;text-decoration:none;color:var(--ink);font-size:.95rem;white-space:nowrap;transition:background .15s,color .15s}
+.nav a:hover{background:var(--soft)}
+.nav a.on{background:var(--brand);color:#fff}
+#themeBtn{margin-inline-start:auto;width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .15s,transform .15s}
+#themeBtn:hover{border-color:var(--brand);transform:rotate(8deg)}
+#themeBtn svg{width:19px;height:19px}
+.search-wrap{position:relative;max-width:1100px;margin:10px auto 2px}
+#q{width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:14px;font-size:1rem;background:var(--card);color:var(--ink);font-family:inherit;box-shadow:var(--sh-sm);transition:box-shadow .15s,border-color .15s}
+#q:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 22%,transparent)}
+.results{position:absolute;inset-inline:0;top:100%;margin-top:6px;background:var(--card);border:1px solid var(--line);border-radius:14px;max-height:60vh;overflow:auto;box-shadow:var(--sh-md);padding:6px}
+.res-g{font-size:.8rem;color:var(--muted);padding:6px 8px 2px}
+.res a{display:block;padding:8px 10px;border-radius:10px;text-decoration:none;color:var(--ink)}
+.res a:hover,.res a:focus{background:var(--soft)}
+.res small{color:var(--muted);display:block}
+
+main{max-width:1100px;margin:0 auto;padding:22px 14px 44px;outline:none;animation:pagein .28s ease}
+@keyframes pagein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+h1{font-size:1.75rem;margin:.3em 0;letter-spacing:-.01em}h2{font-size:1.3rem;margin:1.5em 0 .5em}h3{font-size:1.1rem;margin:1em 0 .3em;color:var(--brand)}
+.lead{color:var(--muted);max-width:70ch}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:center;background:linear-gradient(135deg,#0e7c66,#0a5c4c);color:#fff;border-radius:22px;padding:26px 26px 22px;box-shadow:var(--sh-md);margin-bottom:8px}
+.hero h1{color:#fff;margin:.1em 0 .3em}
+.hero .lead{color:#d9efe9;max-width:56ch}
+.hero-ill svg{width:100%;max-width:300px;height:auto;display:block;margin-inline:auto;filter:drop-shadow(0 8px 18px rgba(0,0,0,.18))}
+.btn.glow{background:#fff;color:#0a5c4c;border-color:#fff;font-weight:700;text-decoration:none}
+.btn.glow:hover{background:#eef7f4}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6);text-decoration:none}
+.btn.ghost:hover{border-color:#fff}
+@media(max-width:720px){.hero{grid-template-columns:1fr;text-align:center}.hero .lead{margin-inline:auto}.hero .bar{justify-content:center}.hero-ill{order:-1}.hero-ill svg{max-width:220px}}
+
+/* cards */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));margin-top:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;box-shadow:var(--sh-sm)}
+a.card{display:block;text-decoration:none;color:inherit;transition:transform .16s,box-shadow .16s,border-color .16s}
+a.card:hover{transform:translateY(-3px);border-color:var(--brand);box-shadow:var(--sh-md)}
+.card .ico{font-size:1.6rem}.card h3{margin:.3em 0 .1em;color:var(--ink)}.card p{margin:.2em 0;color:var(--muted);font-size:.95rem}
+.ico-n{width:36px;height:36px;border-radius:10px;background:var(--soft);color:var(--brand);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.ico-b{width:42px;height:42px;border-radius:12px;background:var(--soft);color:var(--brand);display:flex;align-items:center;justify-content:center}
+.ico-svg{display:inline-flex}.ico-svg svg{width:22px;height:22px}
+.tcard{padding-top:10px}
+.thumb{background:var(--soft);border-radius:12px;margin:0 0 8px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb svg{width:100%;height:118px;display:block}
+.tcard h3{margin:.1em 0}
+
+/* topic page */
+.topic-hero{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:var(--sh-sm);margin:10px 0 4px}
+.topic-hero h1{margin-top:0}
+.illus.big{background:var(--soft);border-radius:16px;padding:8px}
+.illus.big svg{width:100%;max-width:320px;height:auto;display:block;margin-inline:auto}
+@media(max-width:680px){.topic-hero{grid-template-columns:1fr}.illus.big{order:-1}.illus.big svg{max-width:250px}}
+
+/* glossary */
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;cursor:pointer;font:inherit;font-size:.92rem;color:var(--ink);transition:background .15s,color .15s,border-color .15s}
+.chip:hover{border-color:var(--brand)}
+.chip[aria-pressed=true]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.term{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 15px;margin:8px 0;box-shadow:var(--sh-sm)}
+.term .e{font-weight:700;color:var(--brand)}.term .a{font-weight:700}
+.term .n{grid-column:1/-1;color:var(--muted);font-size:.93rem}
+.term .tag{grid-column:1/-1;font-size:.78rem;color:var(--muted)}
+@media(max-width:560px){.term{grid-template-columns:1fr}}
+.count{color:var(--muted);font-size:.9rem}
+
+/* sections & content */
+.sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:8px 18px 14px;margin:12px 0;box-shadow:var(--sh-sm)}
+.sec ul{margin:.3em 0;padding-inline-start:1.2em}.sec li{margin:.3em 0}
+.warn{background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);border-radius:14px;padding:11px 15px;margin:14px 0;color:var(--warn)}
+.refs a{color:var(--brand)}
+
+/* interview */
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin:10px 0;overflow:hidden;box-shadow:var(--sh-sm);transition:border-color .15s}
+.q button.qh{width:100%;text-align:start;background:none;border:0;padding:13px 17px;font:inherit;cursor:pointer;color:var(--ink)}
+.q button.qh:hover{background:var(--soft)}
+.q .qn{color:var(--muted);font-size:.85rem}.q .qe{font-weight:700;display:block}
+.q .qa{padding:4px 17px 15px;border-top:1px dashed var(--line);background:color-mix(in srgb,var(--soft) 45%,var(--card))}
+.q .lab{font-size:.8rem;color:var(--brand);font-weight:700;margin-top:8px;display:block}
+.q.rev{border-color:var(--brand)}
+.btn{border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:12px;padding:8px 15px;font:inherit;cursor:pointer;transition:filter .15s,transform .1s}
+.btn:hover{filter:brightness(1.07)}
+.btn:active{transform:scale(.98)}
+.btn.alt{background:var(--card);color:var(--brand)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+.tocs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.foot{max-width:1100px;margin:0 auto;padding:0 14px 30px;color:var(--muted);font-size:.85rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+@media print{.top,.chips,.bar,.foot,#themeBtn{display:none}.q .qa{display:block!important}body{background:#fff}}
+
+</style>
+<script>(function(){try{var q=new URLSearchParams(location.search).get("theme");var t=q||JSON.parse(localStorage.getItem("theme")||"null");if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+</head>
+<body>
+<a class="skip" href="#main">تخطي للمحتوى</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/" aria-label="الرئيسية"><svg class="logo" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5z" fill="currentColor"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> دليل السلامة المهنية</a>
+    <nav class="nav" aria-label="الأقسام">
+      <a href="#/" data-nav="home">الرئيسية</a>
+      <a href="#/glossary" data-nav="glossary">المصطلحات</a>
+      <a href="#/topics" data-nav="topics">الملخصات</a>
+      <a href="#/interview" data-nav="interview">أسئلة المقابلات</a>
+      <a href="#/sources" data-nav="sources">المصادر</a>
+    </nav>
+  </div>
+  <div class="search-wrap">
+    <input id="q" type="search" placeholder="ابحث بالعربي أو الإنجليزي: scaffold، سقالة، LOTO..." aria-label="بحث" autocomplete="off">
+    <div id="results" class="results" hidden></div>
+  </div>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer class="foot">
+  <p>محتوى تعليمي عام. ليس تعليمات تنفيذ في الموقع ولا مراجعة امتثال للأنظمة السعودية. الأرقام من معايير OSHA الأمريكية (الأرقام الأساسية روجعت مع نصوصها الرسمية يوم 24 نوفمبر 2026، وقد تتغير) وتختلف حسب نوع المعدة والعمل والدولة وجهة العمل. اتبع إجراءات موقعك ومهندس السلامة.</p>
+</footer>
+<script>
+/* قاموس المصطلحات: [التصنيف, English, العربي, ملاحظة قصيرة] */
+window.OHS = window.OHS || {};
+window.OHS.categories = {
+  general: "أساسيات السلامة",
+  ppe: "معدات الوقاية الشخصية",
+  electrical: "الكهرباء",
+  height: "العمل على ارتفاع والسقالات",
+  lifting: "الرافعات والرفع",
+  confined: "الأماكن المحصورة",
+  fire: "الحريق والعمل الساخن",
+  chem: "المواد الكيميائية",
+  excavation: "الحفر",
+  health: "الصحة المهنية",
+  emergency: "الطوارئ والحوادث"
+};
+window.OHS.glossary = [
+  // general
+  ["general","Hazard","خطر (مصدر ضرر محتمل)","شيء ممكن يسبب أذى، زي سلك مكشوف أو أرضية زلقة."],
+  ["general","Risk","مخاطرة (احتمال × شدة)","احتمال حدوث الأذى مضروبًا في شدته."],
+  ["general","Risk assessment","تقييم المخاطر","فحص منظم للمخاطر وتحديد وسائل التحكم فيها."],
+  ["general","Hierarchy of controls","هرم وسائل التحكم","الإزالة، الاستبدال، الضوابط الهندسية، الضوابط الإدارية، ثم معدات الوقاية."],
+  ["general","Elimination","الإزالة","التخلص من الخطر نفسه، وهي أقوى وسيلة تحكم."],
+  ["general","Substitution","الاستبدال","استبدال مادة أو طريقة خطرة بأخرى أقل خطرًا."],
+  ["general","Engineering control","ضابط هندسي","حاجز أو تهوية أو حماية آلة تقلل الخطر عند مصدره."],
+  ["general","Administrative control","ضابط إداري","إجراءات وتدريب وتصاريح وتناوب عمل."],
+  ["general","Near miss","حادث كاد يقع","واقعة بدون إصابة لكن كان ممكن تبقى حادث."],
+  ["general","Incident","حادث / واقعة","أي حدث غير مخطط له سبّب أو كاد يسبب أذى أو خسارة."],
+  ["general","Accident","حادث (إصابة أو ضرر)","حدث غير متوقع نتج عنه إصابة أو ضرر."],
+  ["general","Root cause","السبب الجذري","السبب الأساسي اللي لو اتعالج ما يتكررش الحادث."],
+  ["general","Unsafe act","تصرف غير آمن","سلوك من العامل يزيد احتمال الحادث."],
+  ["general","Unsafe condition","حالة غير آمنة","وضع في المكان أو المعدة يزيد احتمال الحادث."],
+  ["general","Permit to work (PTW)","تصريح عمل","إذن مكتوب بشروط لأعمال عالية الخطورة قبل ما تبدأ."],
+  ["general","Job Safety Analysis (JSA)","تحليل سلامة المهمة","تقسيم المهمة لخطوات وتحديد الخطر ووسيلة التحكم في كل خطوة."],
+  ["general","Method statement","بيان طريقة العمل","وصف مكتوب لخطوات تنفيذ العمل بأمان."],
+  ["general","Toolbox talk (TBT)","حديث السلامة قبل العمل","اجتماع قصير قبل الشغل لشرح المخاطر."],
+  ["general","Safety induction","تعريف السلامة للعاملين الجدد","تدريب أولي عن قواعد الموقع والطوارئ."],
+  ["general","Competent person","شخص مختص","شخص يقدر يتعرف على المخاطر ولديه سلطة تصحيحها."],
+  ["general","Qualified person","شخص مؤهل","شخص عنده شهادة أو خبرة وتدريب موثق في المجال."],
+  ["general","Safety officer","مسؤول سلامة","يتابع تطبيق قواعد السلامة في الموقع."],
+  ["general","HSE","الصحة والسلامة والبيئة","اختصار Health, Safety and Environment."],
+  ["general","Stop work authority","سلطة إيقاف العمل","حق أي عامل في إيقاف الشغل لو شاف خطر."],
+  ["general","Housekeeping","النظافة والترتيب","ترتيب الموقع لمنع التعثر والحريق."],
+  ["general","Safety signage","لافتات السلامة","علامات تحذير وإلزام ومنع وإرشاد."],
+  ["general","Corrective action","إجراء تصحيحي","خطوة لإصلاح المشكلة بعد اكتشافها."],
+  ["general","Preventive action","إجراء وقائي","خطوة لمنع حدوث المشكلة من الأساس."],
+  ["general","Audit","تدقيق","فحص منظم لمطابقة النظام والإجراءات."],
+  ["general","Inspection","تفتيش / معاينة","فحص ميداني للمعدات أو المكان."],
+  ["general","ISO 45001","آيزو 45001","معيار دولي لأنظمة إدارة الصحة والسلامة المهنية."],
+  ["general","Lost Time Injury (LTI)","إصابة مع فقد وقت عمل","إصابة تمنع العامل من العمل بعد يوم الإصابة."],
+  ["general","TRIR","معدل الإصابات المسجلة الكلي","عدد الإصابات × 200,000 ÷ ساعات العمل (طريقة OSHA)."],
+  ["general","First aid","إسعافات أولية","رعاية فورية بسيطة قبل وصول المختصين."],
+  // ppe
+  ["ppe","PPE (Personal Protective Equipment)","معدات الوقاية الشخصية","آخر خط دفاع، لا تغني عن إزالة الخطر."],
+  ["ppe","Hard hat","خوذة الرأس","تحمي من الأجسام الساقطة والاصطدام."],
+  ["ppe","Safety glasses","نظارات سلامة","حماية العين من الشظايا والغبار."],
+  ["ppe","Goggles","نظارات واقية مغلقة","حماية أكبر من الرذاذ والغبار."],
+  ["ppe","Face shield","واقي الوجه","حماية الوجه ويلبس مع النظارات عادة."],
+  ["ppe","Safety boots","حذاء سلامة","مقدمة واقية ونعل مقاوم للثقب."],
+  ["ppe","Steel toe cap","مقدمة حديدية","حماية الأصابع من السقوط والضغط."],
+  ["ppe","Hi-vis vest","سترة عاكسة","تزيد الرؤية للعامل."],
+  ["ppe","Coverall","بدلة عمل","ملبس يغطي الجسم كله."],
+  ["ppe","Ear plugs","سدادات أذن","حماية السمع من الضوضاء."],
+  ["ppe","Ear muffs","واقي أذن خارجي","كمامات تغطي الأذن كاملة."],
+  ["ppe","Respirator","جهاز تنفس / كمامة واقية","يفلتر الهواء أو يوفر هواء، ويحتاج اختيار صحيح وتجربة ملاءمة."],
+  ["ppe","Dust mask","كمامة غبار","للغبار فقط، ولا تحمي من الغازات ولا تعوض نقص الأكسجين."],
+  ["ppe","Fit test","اختبار الملاءمة","فحص إن القناع محكم على وجه المستخدم."],
+  ["ppe","SCBA","جهاز تنفس ذاتي (اسطوانة هواء)","Self-Contained Breathing Apparatus يحمله المستخدم."],
+  ["ppe","Chemical resistant gloves","قفازات مقاومة للمواد الكيميائية","النوع يتحدد حسب المادة."],
+  ["ppe","Full body harness","حزام جسم كامل","لمنع السقوط، ويلبس بالمقاسات الصحيحة."],
+  ["ppe","Lanyard","حبل ربط","يوصل الحزام بنقطة التثبيت."],
+  // electrical
+  ["electrical","Voltage","الجهد الكهربائي","فرق الجهد بالفولت V."],
+  ["electrical","Current","التيار","بالأمبير A، وهو اللي يسبب الأذى في الجسم."],
+  ["electrical","Resistance","المقاومة","بالأوم، بتقلل تدفق التيار."],
+  ["electrical","Short circuit","ماس كهربائي","مسار غير مقصود يسمح بتيار كبير."],
+  ["electrical","Overload","حمل زائد","تيار أكبر من قدرة الدائرة."],
+  ["electrical","Earthing / Grounding","التأريض","مسار آمن للتيار المتسرب للأرض."],
+  ["electrical","Bonding","التوصيل المتساوي الجهد","ربط الأجزاء المعدنية لتفادي فرق جهد."],
+  ["electrical","Circuit breaker","قاطع دائرة","يفصل الدائرة تلقائيًا عند الحمل الزائد."],
+  ["electrical","Fuse","مصهر","يحترق عند زيادة التيار ويفصل الدائرة."],
+  ["electrical","GFCI / RCD","قاطع التسرب الأرضي","يفصل بسرعة لما يحس بتسريب للأرض."],
+  ["electrical","Energized","موصّل بالكهرباء","الجهاز أو الموصل فيه جهد."],
+  ["electrical","De-energized","مفصول عن الكهرباء","مفصول لكن لازم نتأكد قبل اللمس."],
+  ["electrical","Live work","عمل على دائرة حية","يتم فقط بتبرير وتصريح وحماية خاصة."],
+  ["electrical","Lockout/Tagout (LOTO)","قفل ووسم العزل","منع تشغيل الطاقة بالأقفال والبطاقات أثناء الصيانة."],
+  ["electrical","Isolation","عزل","فصل مصدر الطاقة عن المعدة."],
+  ["electrical","Verification of zero energy","التحقق من انعدام الطاقة","اختبار فعلي إن الطاقة مفصولة."],
+  ["electrical","Arc flash","وميض القوس الكهربائي","انفجار حراري وضوئي من قوس كهربي."],
+  ["electrical","Arc flash boundary","حد وميض القوس","مسافة بعدها يحتاج الشخص لوقاية من الحرارة."],
+  ["electrical","Electrical shock","صدمة كهربائية","مرور تيار في الجسم."],
+  ["electrical","Electrocution","صعق قاتل","وفاة بسبب الكهرباء."],
+  ["electrical","Insulation","عزل كهربائي","مادة تمنع مرور التيار."],
+  ["electrical","Extension cord","وصلة كهرباء (فيشة تطويل)","تفحص قبل الاستخدام ولا تستخدم التالفة."],
+  ["electrical","Distribution board / Panel","لوحة توزيع","لوحة فيها القواطع للدوائر."],
+  ["electrical","Voltage tester","جهاز اختبار الجهد","للتأكد من وجود أو غياب الجهد."],
+  ["electrical","Overhead power line","خط كهرباء علوي","خطر كبير للرافعات والسقالات."],
+  // height
+  ["height","Work at height","العمل على ارتفاع","أي عمل ممكن يسقط منه الشخص فيتأذى."],
+  ["height","Fall protection","الحماية من السقوط","منظومة حواجز أو شبكات أو أنظمة إيقاف سقوط."],
+  ["height","Fall prevention","منع السقوط","زي حواجز الحماية والأنظمة اللي تمنع الوصول للحافة."],
+  ["height","Fall arrest","إيقاف السقوط","نظام يوقف الشخص بعد ما يسقط."],
+  ["height","Personal fall arrest system (PFAS)","نظام إيقاف السقوط الشخصي","حزام + وصلة + نقطة تثبيت."],
+  ["height","Anchor point","نقطة تثبيت","نقطة قوية يربط بها نظام الحماية."],
+  ["height","Shock absorbing lanyard","حبل ماص للصدمة","يقلل قوة الصدمة عند السقوط."],
+  ["height","Self-retracting lifeline (SRL)","خط حياة ذاتي السحب","يلتقط السقوط بسرعة."],
+  ["height","Lifeline","خط حياة","حبل أو كابل لتثبيت الوصلات."],
+  ["height","Free fall distance","مسافة السقوط الحر","المسافة قبل ما يبدأ النظام يوقف السقوط."],
+  ["height","Suspension trauma","صدمة التعليق","خطر من التعليق الطويل في الحزام."],
+  ["height","Rescue plan","خطة الإنقاذ","لازم تكون جاهزة قبل العمل على ارتفاع."],
+  ["height","Guardrail","درابزين حماية","حاجز عند الحافة (علوي + أوسط)."],
+  ["height","Toe board","لوح حماية القدم","يمنع سقوط الأدوات."],
+  ["height","Safety net","شبكة أمان","تلتقط الأشخاص أو الأجسام الساقطة."],
+  ["height","Scaffold","سقالة","منصة مؤقتة للعمل على ارتفاع."],
+  ["height","Scaffold tag","بطاقة فحص السقالة","توضح حالة السقالة (صالحة أو ممنوعة)."],
+  ["height","Standard / Upright","عمود رأسي","العمود الرأسي في السقالة."],
+  ["height","Ledger","رباط أفقي","عنصر أفقي يربط الأعمدة."],
+  ["height","Transom","عارضة عرضية","تحمل المنصة وتربط عرضيًا."],
+  ["height","Brace","دعامة قطرية","تثبت السقالة ضد الميل."],
+  ["height","Base plate","لوح قاعدة","يوزع الحمل على الأرض."],
+  ["height","Mobile scaffold","سقالة متحركة","على عجلات، تقفل العجلات أثناء العمل."],
+  ["height","Ladder","سلم","أداة وصول وليست منصة عمل طويل."],
+  ["height","Platform","منصة عمل","سطح العمل بالسقالة."],
+  ["height","Falling object","جسم ساقط","خطر على من يعمل تحت الارتفاع."],
+  ["height","Exclusion zone","منطقة محظورة","منطقة ممنوع دخولها."],
+  // lifting
+  ["lifting","Crane","رافعة","مثلاً رافعة متحركة أو برجية."],
+  ["lifting","Mobile crane","رافعة متحركة","محمولة على شاسيه."],
+  ["lifting","Tower crane","رافعة برجية","ثابتة في مواقع البناء."],
+  ["lifting","Overhead crane / Gantry","رافعة علوية / جسرية","تتحرك على مسارات فوق ورشة."],
+  ["lifting","Forklift","رافعة شوكية","لرفع ونقل الأحمال."],
+  ["lifting","Load chart","جدول الحمولة","يحدد الحمولة المسموحة حسب الذراع والزاوية."],
+  ["lifting","Safe working load (SWL)","الحمل الآمن للتشغيل","أقصى حمل مسموح بحسب المعدة."],
+  ["lifting","Working load limit (WLL)","حد الحمل التشغيلي","الحد الأقصى الذي يمكن للمعدة رفعه."],
+  ["lifting","Radius","نصف القطر","المسافة من محور الرافعة إلى الحمل."],
+  ["lifting","Boom","الذراع","ذراع الرافعة."],
+  ["lifting","Outrigger","دعامة جانبية (ركيزة)","تثبت الرافعة وتزيد الثبات."],
+  ["lifting","Counterweight","ثقل موازن","يوازن الحمل المرفوع."],
+  ["lifting","Rigging","التربيط / التحميل","استخدام الحبال والوصلات لرفع الأحمال."],
+  ["lifting","Rigger","عامل تربيط","يربط الحمل بالأدوات."],
+  ["lifting","Signal person","مشير / موجّه","يوجه المشغل بإشارات."],
+  ["lifting","Sling","حبل رفع / سير","يستخدم لرفع الأحمال."],
+  ["lifting","Wire rope","حبل سلكي","حبل من أسلاك معدنية."],
+  ["lifting","Shackle","شاكل (وصلة)","وصلة معدنية بمسمار."],
+  ["lifting","Hook latch","لسان قفل الخطاف","يمنع انفلات الحمل من الخطاف."],
+  ["lifting","Tag line","حبل توجيه","يتحكم في دوران الحمل."],
+  ["lifting","Lift plan","خطة الرفع","خطة مكتوبة لعمليات الرفع."],
+  ["lifting","Critical lift","رفعة حرجة","رفع عالي الخطورة يحتاج خطة وتصريح."],
+  ["lifting","Center of gravity","مركز الثقل","نقطة توازن الحمل."],
+  ["lifting","Sling angle","زاوية الحبل","كل ما قلت الزاوية زاد الشد على الحبل."],
+  ["lifting","Two-blocking","اصطدام الخطاف بالبكرة","خطر كسر الحبل."],
+  ["lifting","Swing radius","نطاق الدوران","المنطقة اللي يغطيها دوران الرافعة."],
+  // confined
+  ["confined","Confined space","مكان محصور","كبير كفاية للدخول، مداخله ومخارجه محدودة، وغير مصمم للإشغال المستمر."],
+  ["confined","Permit-required confined space","مكان محصور يتطلب تصريح","فيه خطر جوي أو ابتلاع أو سطح مائل أو خطر خطير آخر."],
+  ["confined","Entrant","الداخل","الشخص اللي بيدخل المكان."],
+  ["confined","Attendant","المراقب","يقف بالخارج ويراقب الداخلين."],
+  ["confined","Entry supervisor","مشرف الدخول","يتحقق من الشروط ويصدر ويلغي التصريح."],
+  ["confined","Hazardous atmosphere","جو خطر","أكسجين ناقص أو زائد، غاز قابل للاشتعال أو سام."],
+  ["confined","Oxygen-deficient atmosphere","جو ناقص الأكسجين","أقل من 19.5 % بالحجم."],
+  ["confined","IDLH","خطر فوري على الحياة أو الصحة","Immediately Dangerous to Life or Health."],
+  ["confined","Engulfment","الابتلاع / الغمر","سقوط مادة سائلة أو صلبة تغمر الشخص."],
+  ["confined","Gas detector","جهاز كشف الغاز","يقيس الأكسجين وغيره."],
+  ["confined","LEL","الحد الأدنى للانفجار","Lower Explosive Limit."],
+  ["confined","Purging","تطهير / تفريغ","إزاحة الغاز الخطر."],
+  ["confined","Ventilation","تهوية","توفير هواء نظيف داخل المكان."],
+  ["confined","Rescue","إنقاذ","خطة جاهزة قبل الدخول."],
+  ["confined","Non-entry rescue","إنقاذ بدون دخول","سحب الداخل بحبل من الخارج."],
+  ["confined","Prohibited condition","حالة ممنوعة","ظرف غير مسموح به أثناء الدخول حسب التصريح."],
+  ["confined","Cancel permit","إلغاء التصريح","عند انتهاء العمل أو ظهور حالة ممنوعة."],
+  ["confined","Suspend permit","تعليق التصريح","وقف التصريح مؤقتًا لحين التقييم."],
+  ["confined","Isolation (blanking/blinding)","عزل بالسدادات","فصل الأنابيب بالسدادات أو الفلنجات."],
+  ["confined","Supplied-air respirator (SAR)","جهاز تنفس بهواء مورّد","يعتمد على مصدر هواء خارجي."],
+  // fire
+  ["fire","Hot work","عمل ساخن","لحام وقطع وطحن ينتج شرر أو حرارة."],
+  ["fire","Hot work permit","تصريح عمل ساخن","إذن لأعمال تسبب شرارة."],
+  ["fire","Fire watch","مراقب حريق","شخص يراقب الشرر بعد الانتهاء."],
+  ["fire","Fire triangle","مثلث الحريق","وقود + أكسجين + حرارة."],
+  ["fire","Flammable","قابل للاشتعال","يشتعل بسهولة."],
+  ["fire","Combustible","قابل للاحتراق","يحترق لكن بصعوبة أكثر."],
+  ["fire","Flash point","نقطة الوميض","أقل درجة حرارة تطلق بخارًا يمكن اشتعاله."],
+  ["fire","Fire extinguisher","طفاية حريق","جهاز لإطفاء الحرائق الصغيرة."],
+  ["fire","PASS","طريقة PASS","Pull, Aim, Squeeze, Sweep."],
+  ["fire","Fire alarm","إنذار حريق","جهاز تنبيه."],
+  ["fire","Assembly point","نقطة التجمع","مكان آمن للتجمع بعد الإخلاء."],
+  ["fire","Evacuation","إخلاء","ترك المكان بشكل منظم."],
+  ["fire","Fire exit","مخرج حريق","مسار هروب."],
+  ["fire","Fire drill","تجربة إخلاء","تمرين على خطة الحريق."],
+  // chem
+  ["chem","SDS (Safety Data Sheet)","صحيفة بيانات السلامة","مستند من 16 قسمًا عن المادة."],
+  ["chem","Hazard communication (HazCom)","توصيل معلومات الخطر","وسم وSDS وتدريب."],
+  ["chem","GHS","النظام العالمي المنسق","يصنف ويوسم المواد الكيميائية."],
+  ["chem","Hazard pictogram","رمز الخطر","رسومات على العبوات."],
+  ["chem","Corrosive","مادة أكّالة","تتلف الجلد والمعادن."],
+  ["chem","Toxic","سام","يسبب ضرر عند التعرض."],
+  ["chem","Carcinogen","مسرطن","مادة قد تسبب السرطان."],
+  ["chem","Spill kit","عدة التعامل مع الانسكاب","مواد لامتصاص وتنظيف الانسكاب."],
+  ["chem","Incompatible materials","مواد غير متوافقة","مواد لا تخزن معًا."],
+  ["chem","Eye wash station","محطة غسيل العين","غسل فوري للعين."],
+  ["chem","Safety shower","دش الطوارئ","غسل الجسم عند التلوث."],
+  ["chem","Exposure limit","حد التعرض","أقصى تركيز مسموح."],
+  ["chem","Ventilation","تهوية","موضعية أو عامة."],
+  // excavation
+  ["excavation","Excavation","حفرة (حفر)","أي قطع في سطح الأرض."],
+  ["excavation","Trench","خندق","حفر ضيق وعميق."],
+  ["excavation","Cave-in","انهيار التربة","سقوط جانب الحفر."],
+  ["excavation","Shoring","تدعيم","دعامات تحمي جوانب الحفر."],
+  ["excavation","Shielding","درع واقٍ","صندوق يحمي العاملين."],
+  ["excavation","Sloping","تدريج الميل","جعل الجوانب مائلة."],
+  ["excavation","Benching","تدرج الجوانب","تقسيم الحفر لمدرجات."],
+  ["excavation","Spoil pile","كومة ناتج الحفر","تبعد عن حافة الحفر."],
+  ["excavation","Utility locating","تحديد الخدمات","معرفة الكابلات والأنابيب قبل الحفر."],
+  ["excavation","Egress","مخرج","وسيلة الخروج من الحفر."],
+  ["excavation","Soil classification","تصنيف التربة","تحدد التدعيم المطلوب."],
+  // health
+  ["health","Occupational disease","مرض مهني","مرض سببه بيئة العمل."],
+  ["health","Noise","ضوضاء","في OSHA: مستوى الإجراء 85 ديسيبل (A) والحد المسموح 90 لمتوسط 8 ساعات."],
+  ["health","Decibel (dB)","ديسيبل","وحدة قياس الصوت."],
+  ["health","Hearing protection","حماية السمع","سدادات أو غطاء."],
+  ["health","Heat stress","إجهاد حراري","ضرر من الحرارة العالية."],
+  ["health","Heat stroke","ضربة شمس / ضربة حرارة","حالة طارئة تهدد الحياة."],
+  ["health","Dehydration","جفاف","نقص السوائل."],
+  ["health","Ergonomics","بيئة العمل المريحة / الإرجونوميكس","تصميم الشغل ليناسب الجسم."],
+  ["health","Manual handling","المناولة اليدوية","رفع وحمل بالأيدي."],
+  ["health","Musculoskeletal disorder (MSD)","اضطرابات عضلية هيكلية","ألم بالعضلات والمفاصل."],
+  ["health","Vibration","اهتزاز","خطر من الأدوات الاهتزازية."],
+  ["health","Silica dust","غبار السيليكا","خطر رئوي في القطع والطحن."],
+  ["health","Asbestos","الأسبستوس","ألياف خطرة على الرئة."],
+  ["health","Health surveillance","المراقبة الصحية","فحوص دورية للعاملين."],
+  ["health","Fatigue","إرهاق","يزيد من احتمال الحوادث."],
+  ["health","Welfare facilities","مرافق الرعاية","مياه شرب، دورات مياه، مكان راحة."],
+  // emergency
+  ["emergency","Emergency response plan (ERP)","خطة الاستجابة للطوارئ","خطوات التعامل مع الطوارئ."],
+  ["emergency","Muster point","نقطة التجمع","مكان العد بعد الإخلاء."],
+  ["emergency","Incident investigation","تحقيق الحادث","تحديد الأسباب وتجنب التكرار."],
+  ["emergency","Incident report","تقرير الحادث","توثيق ما حدث."],
+  ["emergency","5 Whys","طريقة 5 لماذا","سؤال لماذا لتحديد السبب الجذري."],
+  ["emergency","Fishbone diagram","مخطط عظمة السمكة","مخطط لتحليل الأسباب."],
+  ["emergency","Lessons learned","الدروس المستفادة","ما نتعلمه بعد الحادث."],
+  ["emergency","Medical evacuation (MEDEVAC)","إخلاء طبي","نقل مصاب للمستشفى."],
+  ["emergency","Emergency contact","جهة اتصال الطوارئ","الأرقام المهمة."],
+  ["emergency","Trauma","إصابة بليغة","إصابة جسدية خطيرة."],
+  ["emergency","CPR","إنعاش قلبي رئوي","ضغطات وتنفس للمصاب فاقد النبض."],
+  ["emergency","AED","جهاز صدمات القلب","جهاز يعيد انتظام القلب."]
+];
+
+</script>
+<script>
+/* ملخصات الأبواب. كل باب: عنوان، فقرة تعريفية، أقسام (عنوان + نقاط)، تنبيه، مراجع */
+window.OHS = window.OHS || {};
+window.OHS.topics = [
+{
+  id:"basics", ar:"أساسيات الصحة والسلامة المهنية", en:"OHS Fundamentals",
+  intro:"الهدف من السلامة المهنية منع الإصابات والأمراض في العمل. تقوم على التعرف على الخطر، وتقييم المخاطرة، ثم اختيار وسيلة التحكم الأقوى المتاحة.",
+  sections:[
+    {h:"هرم وسائل التحكم (من الأقوى للأضعف)", items:[
+      "الإزالة (Elimination): نتخلص من الخطر نفسه، زي تنفيذ العمل على الأرض بدل الارتفاع.",
+      "الاستبدال (Substitution): مادة أو طريقة أقل خطرًا.",
+      "الضوابط الهندسية (Engineering): حواجز، تهوية موضعية، حماية الآلات.",
+      "الضوابط الإدارية (Administrative): إجراءات، تصاريح، تدريب، تناوب.",
+      "معدات الوقاية الشخصية (PPE): آخر خط دفاع، تحمي الشخص فقط ولا تزيل الخطر."]},
+    {h:"خطوات تقييم المخاطر", items:[
+      "حدد الأنشطة والمخاطر (Hazard identification).",
+      "حدد من قد يتأذى وكيف.",
+      "قدّر المخاطرة: احتمال الحدوث × شدة الضرر.",
+      "طبّق وسائل التحكم بالترتيب السابق.",
+      "سجّل النتائج وراجعها عند تغيّر العمل أو بعد حادث."]},
+    {h:"أدوات يومية", items:[
+      "JSA: تحليل المهمة خطوة بخطوة قبل أعمال غير روتينية.",
+      "PTW: تصريح عمل للأعمال الخطرة (ساخن، محصور، ارتفاع، كهرباء).",
+      "Toolbox talk: حديث قصير قبل بدء الوردية.",
+      "Stop work: أي عامل يوقف العمل لو شاف خطر مباشر.",
+      "الإبلاغ عن الـ near miss يمنع حادث حقيقي."]},
+    {h:"مؤشرات شائعة", items:[
+      "TRIR = (عدد الإصابات المسجلة × 200,000) ÷ ساعات العمل. الرقم 200,000 يمثل 100 عامل لمدة سنة تقريبًا حسب طريقة OSHA.",
+      "LTI: إصابة تسبب فقد أيام عمل.",
+      "مؤشرات استباقية (Leading): عدد التفتيشات، التدريبات، الـ near miss المبلغ عنها."]}
+  ],
+  warn:"مستويات التحكم أساس في ISO 45001 وفي معظم أنظمة الإدارة. لا تعتمد على الـ PPE وحدها لو في وسيلة أقوى ممكنة.",
+  refs:[["ISO 45001 (مرجع عام لأنظمة الإدارة)","https://www.iso.org/standard/63787.html"],["NIOSH: Hierarchy of Controls","https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html"],["OSHA: Recordkeeping","https://www.osha.gov/recordkeeping"]]
+},
+{
+  id:"ppe", ar:"معدات الوقاية الشخصية", en:"Personal Protective Equipment",
+  intro:"الـ PPE يقلل الإصابة لكنه لا يزيل الخطر. لازم يناسب الخطر والمقاس، ويتفحص قبل الاستخدام ويتبدل لو تالف.",
+  sections:[
+    {h:"الأنواع الشائعة", items:[
+      "الرأس: خوذة. تتغير حسب التاريخ وتوصية المصنع أو لو اتعرضت لصدمة كبيرة.",
+      "العين والوجه: نظارات أو goggles أو face shield حسب الخطر.",
+      "السمع: سدادات أو غطاء حسب مستوى الضوضاء.",
+      "اليد: القفاز يختار حسب الخطر (قطع، حرارة، كيماويات، كهرباء). لا يوجد قفاز واحد يصلح للكل.",
+      "القدم: حذاء بمقدمة واقية، ونعل مقاوم للانزلاق والثقب عند الحاجة.",
+      "الجسم: سترة عاكسة، بدلة مقاومة للحرارة أو الكيماويات حسب الحالة.",
+      "التنفس: الكمامة المناسبة حسب الخطر، وتتطلب برنامجًا (تقييم طبي وfit test وتدريب)."]},
+    {h:"قواعد اختيار واستخدام", items:[
+      "اختر حسب تقييم المخاطر لا حسب الراحة.",
+      "افحص قبل كل استخدام: شقوق، تآكل، تلف.",
+      "خزّن بعيدًا عن الحرارة والمواد الكيميائية والشمس المباشرة.",
+      "درّب العامل على الاستخدام والحدود والتنظيف."]},
+    {h:"أخطاء شائعة", items:[
+      "استخدام كمامة غبار لمخاطر غازات أو نقص أكسجين.",
+      "حزام سقوط بدون ضبط أو بنقطة تثبيت ضعيفة.",
+      "ارتداء PPE تالف أو منتهي.",
+      "اعتبار الـ PPE بديلًا عن الإجراءات الهندسية."]}
+  ],
+  warn:"الكمامة ذات الفلتر لا توفر أكسجين. في الأجواء ناقصة الأكسجين تحتاج أنظمة تنفس مخصوصة (انظر باب الأماكن المحصورة).",
+  refs:[["OSHA: PPE (1910 Subpart I)","https://www.osha.gov/personal-protective-equipment"],["OSHA 1910.134 Respiratory Protection","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134"]]
+},
+{
+  id:"electrical", ar:"السلامة الكهربائية", en:"Electrical Safety",
+  intro:"الكهرباء تسبب صدمات وحروق وحرائق وقوس كهربائي. الأصل هو فصل الطاقة والتأكد منها قبل العمل، والعمل على دائرة حية استثناء مبرر.",
+  sections:[
+    {h:"الأخطار الأساسية", items:[
+      "الصدمة الكهربائية: التيار المار بالجسم هو الضار، وتأثيره يعتمد على القيمة والمدة والمسار.",
+      "الحروق الحرارية والكهربية.",
+      "Arc flash وarc blast: وميض وحرارة وضغط من قوس كهربائي.",
+      "الحريق من الأحمال الزائدة أو التوصيلات السيئة.",
+      "الاقتراب من الخطوط العلوية، خصوصًا مع الرافعات والسقالات والسلالم المعدنية."]},
+    {h:"ممارسات آمنة", items:[
+      "افصل الطاقة واعزلها وطبّق LOTO (راجع الباب التالي).",
+      "اختبر قبل اللمس: تحقق بجهاز اختبار مناسب، واختبر الجهاز نفسه على مصدر معروف قبل وبعد القياس حسب الإجراء.",
+      "استخدم أدوات معزولة ومصنفة، وقفازات ومعدات مناسبة لمستوى الجهد عند الحاجة.",
+      "قاطع التسرب الأرضي (GFCI/RCD) للمعدات المحمولة والأماكن الرطبة.",
+      "افحص الأسلاك والوصلات قبل الاستخدام، ولا تستخدم وصلة تالفة.",
+      "لا يعمل على الكهرباء إلا شخص مؤهل (Qualified Person).",
+      "حافظ على المسافات الآمنة من الموصلات المكشوفة."]},
+    {h:"المسافة من الخطوط العلوية (حسب نوع العمل)", items:[
+      "الرافعات والمعدات (OSHA 1926.1408): الخيارات: تأكيد من الجهة المالكة للخط أنه مفصول ومؤرض بشكل مرئي في موقع العمل (deenergized and visibly grounded)، أو الالتزام بمسافة 20 قدم (حوالي 6 م) للخطوط حتى 350 ك.ف فقط (فوق 350 حتى 1000 ك.ف تصبح المسافة 50 قدم بدل 20 حسب 1926.1409، وفوق 1000 ك.ف تحددها الجهة المالكة أو مهندس مؤهل مسجل)، أو مسافة الجدول A حسب الجهد. جدول A: حتى 50 ك.ف = 10 أقدام، فوق 50 حتى 200 = 15، فوق 200 حتى 350 = 20، فوق 350 حتى 500 = 25، فوق 500 حتى 750 = 35، فوق 750 حتى 1000 = 45 قدم، وفوق 1000 ك.ف تحددها الجهة المالكة أو مهندس مؤهل. المسافة تشمل أي جزء من المعدة أو الحبل أو الحمل. ملخص تعليمي بمعايير OSHA الأمريكية وليس إذنًا بالعمل؛ الاقتراب أكثر من مسافة الجدول A له شروط منفصلة (1926.1410).",
+      "شخص غير مؤهل يعمل في موضع مرتفع قرب خط علوي (OSHA 1910.333(c)(3)): 10 أقدام (3 م) للجهد حتى 50 ك.ف، وفوق ذلك 10 أقدام + 4 بوصات لكل 10 ك.ف زيادة عن 50.",
+      "السقالات قرب الخطوط (1926.451(f)(6)) تعتمد على هل الخط معزول أم غير معزول، وعلى الجهد. لا يوجد رقم واحد. راجع الجدولين في النص الرسمي: جدول الخطوط المعزولة (أقل من 300 فولت = 3 أقدام، 300 فولت إلى 50 ك.ف = 10 أقدام، فوق 50 ك.ف = 10 أقدام + 0.4 بوصة لكل 1 ك.ف، أو بديل ضعف طول عازل الخط وليس أقل من 10 أقدام). وجدول الخطوط غير المعزولة (أقل من 50 ك.ف = 10 أقدام، وفوق 50 ك.ف نفس قاعدة الإضافة). ولا تعتبر خطًا معزولًا إلا بتأكيد الجهة المالكة.",
+      "هذه الأرقام حسب نوع المعدة وفئة العمل، ولا تعمم على كل عمل. وتتغير المتطلبات حسب الدولة والجهة المالكة للشبكة، فاتبع إجراءات الموقع."]},
+    {h:"الاستجابة لصدمة كهربائية", items:[
+      "لا تلمس المصاب قبل ما الطاقة تتفصل أو تتأكد من الأمان.",
+      "اطلب الإسعاف فورًا.",
+      "ابدأ الإنعاش القلبي الرئوي (CPR) لو لزم وأنت مدرب."]}
+  ],
+  warn:"أي عمل على دوائر حية يحتاج تبرير وتصريح وإجراءات حماية من قوس كهربائي. لا يتم بالاجتهاد.",
+  refs:[["OSHA: Electrical","https://www.osha.gov/electrical"],["OSHA 1910.333 Selection and use of work practices","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333"],["OSHA 1926.1408 Power line safety (crane)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1408"],["OSHA 1926.1409 Power line safety (over 350 kV)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1409"],["OSHA 1926.1410 Power line safety (all voltages) - الاقتراب أقل من مسافة الجدول A يحتاج ضوابط منفصلة","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1410"],["NFPA 70E (معيار تجاري، راجع النسخة الحالية)","https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e"]]
+},
+{
+  id:"loto", ar:"العزل والقفل والوسم (LOTO)", en:"Lockout/Tagout",
+  intro:"LOTO يمنع تشغيل أو تحرر طاقة غير متوقعة أثناء الصيانة، ويشمل الطاقة الكهربائية والميكانيكية والهيدروليكية والهوائية والحرارية والكيميائية والمخزنة.",
+  sections:[
+    {h:"الخطوات العامة", items:[
+      "1. التحضير: تحديد المعدة ومصادر الطاقة وطريقة الإيقاف.",
+      "2. إبلاغ المتأثرين.",
+      "3. الإيقاف بالطريقة الصحيحة.",
+      "4. العزل: فصل مصادر الطاقة (قاطع، محبس، قفل).",
+      "5. وضع القفل والبطاقة (Lock + Tag) من كل عامل يعمل.",
+      "6. تفريغ الطاقة المخزنة (ضغط، نابض، مكثفات، ثقل).",
+      "7. التحقق: تجربة تشغيل (try-out) أو قياس للتأكد من عدم وجود طاقة.",
+      "8. عند الانتهاء: تنظيف المكان، إزالة الأقفال من صاحبها، إبلاغ المتأثرين، إعادة التشغيل."]},
+    {h:"قواعد مهمة", items:[
+      "القفل شخصي: كل شخص يضع قفله ويحمل مفتاحه.",
+      "لا تُزال الأقفال بواسطة غير صاحبها إلا بإجراء رسمي موثق.",
+      "البطاقة وحدها (Tagout) أضعف من القفل.",
+      "درّب العاملين المصرح لهم والمتأثرين."]}
+  ],
+  warn:"لا تعتمد على زر التوقف (Stop) كعزل. العزل يكون بوسيلة فصل فعلية.",
+  refs:[["OSHA 1910.147 Control of hazardous energy","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147"],["OSHA: Lockout/Tagout","https://www.osha.gov/control-hazardous-energy"]]
+},
+{
+  id:"height", ar:"العمل على ارتفاع", en:"Working at Height",
+  intro:"السقوط من ارتفاع من أكثر أسباب الوفيات في الإنشاءات. المنهج: تجنب العمل على ارتفاع، ثم الحماية الجماعية، ثم الحماية الشخصية.",
+  sections:[
+    {h:"حدود OSHA الأمريكية (كمرجع تعليمي، تختلف حسب نوع الموقع والعمل)", items:[
+      "الإنشاءات 1926.501(b)(1): حافة أو جانب غير محمي على ارتفاع 6 أقدام (1.8 م) أو أكثر يتطلب درابزين أو شبكة أمان أو نظام إيقاف سقوط شخصي. وللحافة المتقدمة (leading edge) والفتحات وغيرها بنود خاصة.",
+      "فوق معدات خطرة: أقل من 6 أقدام فوقها يتطلب درابزين أو حماية للمعدة، و6 أقدام أو أكثر يتطلب درابزين أو PFAS أو شبكة (1926.501(b)(8)).",
+      "الصناعة العامة 1910.28(b)(1): الحد 4 أقدام (1.2 م) لسطح مشي/عمل له حافة غير محمية. وللسلالم الثابتة والأسطح والفتحات أحكام خاصة.",
+      "السقالات 1926.451(g)(1): العامل على سقالة أكثر من 10 أقدام (3.1 م) فوق مستوى أدنى يحتاج حماية سقوط، والنوع (درابزين أو PFAS) يختلف حسب نوع السقالة.",
+      "العتبة تعتمد على المعيار المطبق وطبيعة العمل، لا قاعدة واحدة. اتبع الأشد في موقعك وجهة العمل."]},
+    {h:"وسائل الحماية", items:[
+      "حواجز (Guardrails): في OSHA للإنشاءات، ارتفاع الدرابزين العلوي 42 بوصة (± 3) والأوسط في منتصف المسافة.",
+      "شبكات الأمان ومناطق الوصول المحكومة.",
+      "نظام إيقاف السقوط الشخصي (PFAS): حزام جسم كامل، وصلة، نقطة تثبيت، وخطة إنقاذ.",
+      "تغطية الفتحات وعلامات واضحة."]},
+    {h:"نظام إيقاف السقوط", items:[
+      "حزام جسم كامل فقط (لا حزام وسط).",
+      "نقطة التثبيت (1926.502(d)(15)): تتحمل 5000 رطل لكل شخص موصول بها، أو تُصمم وتُركب وتُستخدم كجزء من نظام إيقاف سقوط كامل بعامل أمان لا يقل عن 2 وتحت إشراف شخص مؤهل.",
+      "النظام يجب ألا يسمح بسقوط حر أكثر من 6 أقدام (1.8 م) ولا يلمس مستوى أدنى، ويحد مسافة التباطؤ إلى 3.5 قدم (1.07 م) (1926.502(d)(16)).",
+      "احسب مسافة الخلوص تحت المستخدم قبل التثبيت.",
+      "خطة إنقاذ جاهزة، ولا تترك أحدًا معلقًا (صدمة التعليق)."]},
+    {h:"السلالم", items:[
+      "السلم المتكئ غير ذاتي الوقوف: المسافة الأفقية من القاعدة تقريبًا ربع طول السلم العامل (4:1) (1926.1053).",
+      "جوانب السلم المحمول تمتد 3 أقدام (0.9 م) فوق سطح الوصول، أو يُثبّت السلم من أعلى بدعامة ثابتة مع مقبض إمساك لو الامتداد مستحيل.",
+      "فحص قبل الاستخدام، ثلاث نقاط تلامس، ولا تحمل شيئًا يمنع الإمساك.",
+      "السلالم المعدنية بعيدًا عن الكهرباء."]},
+    {h:"الطقس والظروف", items:[
+      "أوقف العمل عند رياح شديدة أو أمطار أو حرارة عالية تهدد السلامة حسب إجراءات الموقع.",
+      "سقوط الأدوات: ربط الأدوات، وأحزمة، ومناطق ممنوعة تحت العمل."]}
+  ],
+  warn:"لا تعتبر الحزام بديلًا عن الحماية الجماعية لو متاحة. ولا يبدأ عمل على ارتفاع بدون خطة إنقاذ.",
+  refs:[["OSHA 1926.501 Duty to have fall protection","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.501"],["OSHA 1926.502 Fall protection systems criteria","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.502"],["OSHA 1910.28 General industry","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.28"],["OSHA 1926.1053 Ladders","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1053"]]
+},
+{
+  id:"scaffold", ar:"السقالات", en:"Scaffolding",
+  intro:"السقالة منصة مؤقتة. أخطارها: السقوط، انهيار السقالة، سقوط الأجسام، والكهرباء.",
+  sections:[
+    {h:"قواعد التركيب والاستخدام", items:[
+      "تُركب وتُعدَّل وتُفكك تحت إشراف شخص مختص (Competent Person) وبعمال مدربين.",
+      "فحص قبل كل وردية بواسطة المختص، وبعد أي حدث يؤثر على سلامتها.",
+      "قاعدة مستقرة: لوح قاعدة (base plate) على أرض صلبة أو أخشاب توزيع.",
+      "المنصات مكتملة التغطية بألواح سليمة، بدون فجوات كبيرة.",
+      "حواجز على الجوانب المفتوحة، ولوح قدم (toe board) أو حماية من الأجسام الساقطة.",
+      "السقالة المدعومة: لو نسبة الارتفاع إلى أقل بعد للقاعدة أكبر من 4:1 يجب تثبيتها بالربط أو الشد أو الدعم (1926.451(c)(1)).",
+      "السعة: كل سقالة ومكوناتها تتحمل وزنها و4 أضعاف أقصى حمل مقصود على الأقل (1926.451(a)(1)). وحبال التعليق 6 أضعاف.",
+      "السقالات قرب خطوط الكهرباء العلوية: المسافة تحددها جداول 1926.451(f)(6) حسب كون الخط معزولًا أو غير معزول وحسب الجهد (مثلًا غير المعزول أقل من 50 ك.ف = 10 أقدام). راجع الجدول الرسمي ولا تعمم رقمًا واحدًا، وتأكد من الجهة المالكة للخط.",
+      "حماية السقوط على السقالة: أكثر من 10 أقدام فوق مستوى أدنى، والنوع حسب نوع السقالة (1926.451(g)).",
+      "وسيلة وصول آمنة (سلم داخلي أو برج) ولا تتسلق الدعامات.",
+      "بطاقة السقالة (Scaffold tag): أخضر مسموح، أحمر ممنوع، حسب نظام الشركة."]},
+    {h:"أخطاء خطيرة", items:[
+      "تحميل المنصة فوق حدها.",
+      "إزالة الدعامات أو الأربطة للتسهيل.",
+      "تحريك سقالة متحركة وفيها أشخاص أو مواد.",
+      "نسيان قفل العجلات.",
+      "العمل قرب خطوط كهرباء بدون عزل أو مسافة آمنة.",
+      "استخدام سقالة بدون بطاقة فحص."]},
+    {h:"السقالة المتحركة", items:[
+      "اقفل العجلات قبل العمل.",
+      "الأرضية مستوية.",
+      "لا تحرك وفيها ناس، وأبعد المواد."]}
+  ],
+  warn:"التفاصيل والنسب (مثل 4:1 وارتفاع السقالة) تختلف حسب نوع السقالة والمصنع والقانون. المرجع هو دليل الشركة المصنعة والمعيار المطبق ومهندس السقالات.",
+  refs:[["OSHA 1926 Subpart L Scaffolds","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.451"],["OSHA: Scaffolding","https://www.osha.gov/scaffolding"]]
+},
+{
+  id:"lifting", ar:"الرافعات وعمليات الرفع", en:"Cranes & Lifting",
+  intro:"الرفع من الأعمال شديدة الخطورة: انقلاب الرافعة، سقوط الحمل، الاصطدام، والكهرباء. يتحكم فيه تخطيط وتدريب ومعدات مفحوصة.",
+  sections:[
+    {h:"الأدوار", items:[
+      "مشغل الرافعة (Operator): مدرب ومؤهل حسب المتطلبات.",
+      "عامل التربيط (Rigger): يختار الأدوات ويربط الحمل.",
+      "المشير (Signal person): يوجه المشغل بإشارات متفق عليها، أو اتصال لاسلكي.",
+      "المشرف على الرفع (Lift supervisor/Appointed person): يعتمد خطة الرفع."]},
+    {h:"قبل الرفع", items:[
+      "خطة الرفع: وزن الحمل، مركز الثقل، نصف القطر، الحمولة المسموحة من جدول الحمولة، الأرض، الطقس.",
+      "أرض مستقرة ووضع الدعامات (outriggers) بالكامل وفق دليل المصنع.",
+      "فحص قبل التشغيل: الحبال، الخطاف ولسان القفل، فرامل، أجهزة الأمان.",
+      "إغلاق منطقة تحت الحمل وعلامات.",
+      "حدد مسارات الكهرباء العلوية وحافظ على المسافة الآمنة."]},
+    {h:"أثناء الرفع", items:[
+      "لا أحد تحت الحمل المرفوع.",
+      "رفع تجريبي قصير للتأكد من التوازن والتربيط.",
+      "استخدام حبل توجيه (tag line) للتحكم بالدوران.",
+      "لا تتجاوز الحمولة المسموحة، وراعِ تأثير الرياح.",
+      "لا تترك الحمل معلقًا بدون مراقبة.",
+      "أوقف الرفع فورًا عند أي شك."]},
+    {h:"الحبال والتربيط", items:[
+      "كلما قلت زاوية الحبل مع الأفقي، زاد الشد على كل فرع، فتقل السعة العملية.",
+      "افحص الحبل: قطع، تآكل، التواء، تلف.",
+      "لا تستخدم حبل بدون بطاقة سعة واضحة.",
+      "الحواف الحادة: استخدم واقي.",
+      "الخطاف يكون بلسان قفل سليم."]},
+    {h:"إشارات اليد", items:["تعتمد إشارات قياسية (مثل OSHA/ASME) ويجب أن يعرفها المشير والمشغل.","إشارة الطوارئ: إيقاف فوري."]}
+  ],
+  warn:"هذا ملخص تعليمي. خطة الرفع الفعلية والحمولات تحددها جداول الشركة المصنعة والمهندس المختص.",
+  refs:[["OSHA 1926 Subpart CC Cranes and Derricks in Construction","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1400"],["OSHA 1910.184 Slings","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.184"],["OSHA: Cranes & Derricks","https://www.osha.gov/cranes-derricks"]]
+},
+{
+  id:"confined", ar:"الأماكن المحصورة", en:"Confined Spaces",
+  intro:"المكان المحصور خطر لأن الجو فيه قد يكون ناقص الأكسجين أو سام أو قابل للانفجار، ولأن الإنقاذ صعب. ما يلي ملخص تعليمي على أساس OSHA الأمريكية (الإنشاءات 1926 Subpart AA) وهو ليس مراجعة للمتطلبات السعودية.",
+  sections:[
+    {h:"التعريفات", items:[
+      "Confined space: كبير كفاية ليدخله شخص، مداخله ومخارجه محدودة، وغير مصمم للإشغال المستمر.",
+      "Permit-required confined space: confined space فيه خطر جوي، أو خطر ابتلاع، أو جدران متقاربة أو أرضية مائلة تحبس الشخص، أو أي خطر خطير آخر.",
+      "الدخول لا يتم لمجرد أن المعدات متوفرة. الدخول يحتاج تصريحًا وإجراءات."]},
+    {h:"الأدوار", items:[
+      "Entrant (الداخل)، Attendant (المراقب بالخارج)، Entry supervisor (مشرف الدخول).",
+      "المراقب لا يدخل أبدًا للإنقاذ، بل يطلب فريق الإنقاذ."]},
+    {h:"الاختبار والتهوية", items:[
+      "اختبار الجو بجهاز مناسب ومعاير قبل الدخول وبعده حسب البرنامج.",
+      "الترتيب الشائع: الأكسجين أولًا، ثم الغازات القابلة للاشتعال، ثم السموم.",
+      "الأكسجين الطبيعي حوالي 20.9 %. الجو ناقص الأكسجين أقل من 19.5 %.",
+      "في برنامج التصريح الكامل (1926.1204) يُختبر الجو بالترتيب: أكسجين، ثم غازات قابلة للاشتعال، ثم سموم.",
+      "الدخول بالإجراءات البديلة (1926.1203(e)) مسموح فقط لو تحققت كل الشروط: (1) كل الأخطار الفيزيائية أُزيلت أو عُزلت بضوابط هندسية بحيث الخطر الوحيد جوي فعلي أو محتمل. (2) صاحب العمل يثبت أن التهوية القسرية المستمرة وحدها كافية، وأن الداخلين يقدرون يخرجوا بأمان لو توقفت التهوية. (3) وجود بيانات مراقبة وفحص تدعم ذلك. (4) أي دخول أولي لجمع البيانات يتم بمتطلبات التصريح الكامل. (5) توثيق ما سبق وإتاحته للداخلين. (6) الدخول يتم حسب (e)(2).",
+      "ومتطلبات (e)(2) تشمل: اختبار الجو قبل الدخول بجهاز قراءة مباشرة معاير بنفس الترتيب، ولا جو خطر أثناء وجود أحد بالداخل، وتهوية قسرية مستمرة من مصدر نظيف ولا يدخل أحد قبل إزالة الجو الخطر، ومراقبة الجو (مستمرة إلا لو ثبت عدم توفر جهاز أو كفاية المراقبة الدورية)، والخروج الفوري لو اكتُشف خطر وتقييم الحالة، وطريقة دخول وخروج آمنة، وشهادة مكتوبة قبل الدخول بالتاريخ والمكان والتوقيع.",
+      "لو ظهر خطر آخر أو لم تتحقق أي من الشروط، يُطبق برنامج التصريح الكامل."]},
+    {h:"التنفس في جو ناقص الأكسجين (IDLH)", items:[
+      "OSHA 1910.134(d)(2) (والإنشاءات تحيل إليه عبر 1926.103): كل جو ناقص الأكسجين يُعتبر IDLH، إلا لو أثبت صاحب العمل أن الأكسجين يظل ضمن النطاقات في الجدول II تحت كل الظروف المتوقعة، فيجوز عندها أي جهاز موفر للهواء.",
+      "لجو IDLH المطلوب: جهاز SCBA بقناع وجه كامل بضغط موجب عند الطلب (full facepiece pressure-demand) ومعتمد من NIOSH لخدمة 30 دقيقة على الأقل، أو جهاز SAR مركب بقناع وجه كامل بضغط موجب مع مصدر هواء ذاتي مساعد (auxiliary self-contained air supply).",
+      "يعني خط الهواء وحده (بدون مصدر هواء ذاتي احتياطي) لا يكفي في جو IDLH. وأجهزة الهروب فقط تكون معتمدة للجو المقصود.",
+      "الكمامة ذات الفلتر لا توفر أكسجين.",
+      "معدات التنفس لوحدها ليست تصريحًا بالدخول. التصريح يحتاج تقييمًا كاملًا للأخطار."]},
+    {h:"الحالة الممنوعة (Prohibited condition)", items:[
+      "عند ظهور حالة غير مسموح بها في التصريح، يُنهي مشرف الدخول الدخول (1926.1205(e)).",
+      "لو الحالة مؤقتة ولا تغيّر شكل المكان ولا تخلق أخطارًا جديدة: يعلّق أو يلغي التصريح ويُعاد تقييم المكان بالكامل قبل العودة.",
+      "غير ذلك: يُلغى التصريح. ولا يُعدّل التصريح مجرد تعديل ويرجع العمل."]},
+    {h:"الإنقاذ", items:[
+      "خطة الإنقاذ جاهزة قبل الدخول وليست مرتجلة.",
+      "الإنقاذ بدون دخول (حبل وحزام ومرفاع) مفضل إذا أمكن.",
+      "فريق الإنقاذ مدرب ومعه معدات."]}
+  ],
+  warn:"الدخول لا يُسمح به بمجرد توفر معدات الحماية. لازم تصريح وتقييم واختبار وإنقاذ جاهز. وتحقق من المتطلبات المحلية المطبقة.",
+  refs:[["OSHA 1926 Subpart AA Confined Spaces in Construction","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1200"],["OSHA 1926.1203 General requirements (alternate procedures)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1203"],["OSHA 1926.1205 Permitted entry (permit cancel/suspend)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1205"],["OSHA 1910.134 Respiratory protection (IDLH: (d)(2))","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134"],["OSHA 1926.103 Respiratory protection (construction, refers to 1910.134)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.103"],["OSHA 1910.146 General industry confined spaces","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146"]]
+},
+{
+  id:"fire", ar:"الحريق والعمل الساخن", en:"Fire & Hot Work",
+  intro:"الحريق يحتاج وقود وأكسجين وحرارة (مثلث الحريق، وتفاعل متسلسل في النموذج الأحدث). الوقاية أفضل من الإطفاء.",
+  sections:[
+    {h:"الوقاية", items:[
+      "فصل المواد القابلة للاشتعال، تخزين صحيح، ونظافة الموقع.",
+      "مصادر الاشتعال: كهرباء، شرر، تدخين، أسطح ساخنة.",
+      "طفايات مناسبة لنوع الحريق، مفحوصة، وظاهرة.",
+      "مخارج طوارئ غير مسدودة، وخطة إخلاء ونقطة تجمع."]},
+    {h:"العمل الساخن (لحام، قطع، طحن)", items:[
+      "تصريح عمل ساخن قبل البدء.",
+      "تنظيف المنطقة من المواد القابلة للاشتعال أو تغطيتها (مثل ستائر لحام).",
+      "طفاية جاهزة، ومراقب حريق (Fire watch) أثناء وبعد العمل حسب الإجراء.",
+      "فحص الغازات قبل العمل في مكان به أبخرة.",
+      "الأسطوانات: مثبتة رأسيًا، بعيدة عن الحرارة، والأكسجين بعيد عن الزيت والشحم."]},
+    {h:"الطفايات (PASS)", items:[
+      "Pull: اسحب مسمار الأمان.",
+      "Aim: وجّه إلى قاعدة النار.",
+      "Squeeze: اضغط على المقبض.",
+      "Sweep: حرّك من جانب لآخر.",
+      "الإطفاء فقط لو الحريق صغير والمخرج خلفك وأنت مدرب. وإلا أخلِ وأبلغ."]},
+    {h:"عند سماع الإنذار", items:["أوقف الشغل واقفل المعدات لو آمن.","استخدم أقرب مخرج، ولا تستخدم المصعد.","اذهب لنقطة التجمع وأبلغ عن العدد."]}
+  ],
+  warn:"أنواع الحرائق وتصنيف الطفايات (A, B, C, D, K) يختلف قليلًا حسب المعيار (NFPA، EN). تحقق من التصنيف المستخدم في موقعك.",
+  refs:[["OSHA: Fire Safety","https://www.osha.gov/fire-safety"],["OSHA 1910.252 Welding, cutting, brazing","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.252"],["NFPA: Fire extinguishers","https://www.nfpa.org/education-and-research/home-fire-safety/fire-extinguishers"]]
+},
+{
+  id:"chem", ar:"المواد الكيميائية", en:"Hazardous Chemicals",
+  intro:"المواد الكيميائية تدخل الجسم بالاستنشاق أو الجلد أو الابتلاع أو العين. نظام GHS يوحد التصنيف والوسم وصحيفة السلامة.",
+  sections:[
+    {h:"الوسم وSDS", items:[
+      "العبوة تحمل: اسم المنتج، رمز الخطر، كلمة تنبيه (Danger/Warning)، بيانات الخطر.",
+      "SDS من 16 قسمًا تشمل: التعريف، المخاطر، التركيب، الإسعافات، مكافحة الحريق، الانسكاب، المناولة والتخزين، حدود التعرض وPPE، وغيرها.",
+      "يجب أن تكون الـ SDS متاحة للعاملين."]},
+    {h:"التحكم", items:[
+      "استبدال بمادة أقل خطرًا.",
+      "تهوية موضعية.",
+      "PPE مناسبة للمادة (القفاز يحدده SDS).",
+      "تخزين المواد غير المتوافقة منفصلة (أحماض عن قلويات، مؤكسدات عن قابلة للاشتعال).",
+      "لا تخلط مواد دون معرفة التفاعل."]},
+    {h:"الانسكاب والتعرض", items:[
+      "اعزل المكان وأبلغ، استخدم عدة الانسكاب وPPE مناسبة.",
+      "العين: اغسل بمحطة غسيل العين بشكل متواصل (غالبًا 15 دقيقة، راجع SDS).",
+      "الجلد: انزع الملابس الملوثة واغسل بالماء الجاري.",
+      "اطلب مساعدة طبية واصطحب SDS."]}
+  ],
+  warn:"التعليمات الدقيقة تأتي من SDS الخاصة بكل مادة.",
+  refs:[["OSHA: Hazard Communication","https://www.osha.gov/hazcom"]]
+},
+{
+  id:"excavation", ar:"الحفر والخنادق", en:"Excavation & Trenching",
+  intro:"انهيار الخندق قد يقتل في ثوان. 1 متر مكعب من التربة يزن أكثر من طن، والشخص لا يقدر على الإفلات.",
+  sections:[
+    {h:"قبل الحفر", items:[
+      "تحديد الخدمات تحت الأرض (كهرباء، غاز، مياه، اتصالات) وإبلاغ الجهات.",
+      "شخص مختص يفحص الموقع والتربة.",
+      "خطة للحماية والوصول والصرف."]},
+    {h:"الحماية (مثال OSHA)", items:[
+      "OSHA 1926.652(a): نظام حماية مطلوب للحفر، إلا لو كان الحفر بالكامل في صخر ثابت، أو أقل من 5 أقدام (1.5 م) عمقًا وفحص شخص مختص الأرض ولا يوجد أي مؤشر على احتمال انهيار.",
+      "يعني 5 أقدام ليست رقمًا مطلقًا: أقل من 5 أقدام قد يحتاج حماية لو ظهرت مؤشرات انهيار.",
+      "الوسائل: تدريج الميل (sloping)، مدرجات (benching)، تدعيم (shoring)، درع (shield/trench box). وبعض التصاميم (Option 4) يعتمدها مهندس مسجل."]},
+    {h:"أثناء العمل", items:[
+      "في الخنادق بعمق 4 أقدام (1.2 م) أو أكثر: وسيلة خروج (سلم أو درج) بحيث لا يزيد المشي الجانبي للعامل عن 25 قدم (7.6 م) (OSHA).",
+      "ناتج الحفر وأي معدات تبعد 2 قدم (0.6 م) على الأقل عن الحافة.",
+      "فحص يومي وبعد المطر، وانتبه للمياه.",
+      "اختبار جو لو يشتبه في أبخرة أو نقص أكسجين.",
+      "حواجز حول الحفر، ولافتات."]}
+  ],
+  warn:"لا تدخل خندقًا غير محمي بغرض إصلاح سريع. المرجع هو التصنيف والتصميم من مختص.",
+  refs:[["OSHA 1926.651 Excavations: specific requirements","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.651"],["OSHA 1926.652 Requirements for protective systems","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.652"],["OSHA: Trenching and Excavation","https://www.osha.gov/trenching-excavation"]]
+},
+{
+  id:"health", ar:"الصحة المهنية", en:"Occupational Health",
+  intro:"الصحة المهنية تهتم بالأمراض الناتجة عن العمل: الضوضاء، الحرارة، الغبار، المواد الكيميائية، الإرجونوميكس.",
+  sections:[
+    {h:"الضوضاء", items:[
+      "الفرق بين المستويين في OSHA: مستوى الإجراء (action level) متوسط 8 ساعات عند 85 ديسيبل (A) يستدعي برنامج حماية سمع (مراقبة وفحوص سمع وحماية وتدريب) في الصناعة العامة (1910.95). أما حد التعرض المسموح (PEL) فهو 90 ديسيبل (A) لمدة 8 ساعات، مع تبادل 5 ديسيبل (كل 5 ديسيبل زيادة تقلل الزمن للنصف).",
+      "في الإنشاءات (1926.52) الجدول D-2: 90 ديسيبل (A) لـ 8 ساعات، 95 لـ 4 ساعات، 100 لساعتين، 105 لساعة، 110 لنصف ساعة، 115 لربع ساعة أو أقل. ويجب استخدام ضوابط إدارية أو هندسية ممكنة قبل الاعتماد على الحماية الشخصية. والضوضاء الصدمية لا تزيد عن 140 ديسيبل ذروة.",
+      "معايير أخرى (ISO، ACGIH، أنظمة دول) تستخدم حدودًا مختلفة (مثل 85 ديسيبل مع تبادل 3 ديسيبل). اتبع الحد المطبق.",
+      "التحكم: تقليل المصدر، عزل، تقليل زمن التعرض، ثم سدادات أو أغطية.",
+      "فحص سمع دوري."]},
+    {h:"الإجهاد الحراري", items:[
+      "العلامات: صداع، دوخة، تعرق شديد، تشنجات، غثيان.",
+      "ضربة الحرارة طارئة: حرارة عالية، تشوش، فقد وعي، وربما توقف التعرق. اتصل بالإسعاف وابدأ التبريد فورًا.",
+      "الوقاية: ماء بانتظام، راحة في الظل، جدولة الأعمال الثقيلة، تأقلم تدريجي، ومراقبة الزملاء."]},
+    {h:"الإرجونوميكس والمناولة", items:[
+      "تقليل الرفع اليدوي بأدوات ميكانيكية.",
+      "ارفع بقدميك لا بظهرك، وقرّب الحمل من الجسم، وتجنب الالتواء.",
+      "فترات راحة وتدوير الأعمال."]},
+    {h:"الغبار والمواد", items:[
+      "السيليكا والأسبستوس خطيران على الرئة.",
+      "التحكم: ماء، تهوية شفط، أجهزة تنفس مناسبة، ومراقبة طبية.",
+      "نظافة شخصية: لا تأكل أو تدخن في مناطق التلوث."]}
+  ],
+  warn:"حدود التعرض تختلف بين الجهات (OSHA PEL، ACGIH TLV، حدود محلية). استخدم الحد المطبق في موقعك.",
+  refs:[["OSHA: Noise","https://www.osha.gov/noise"],["OSHA 1910.95 Occupational noise exposure","https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95"],["OSHA 1926.52 Occupational noise exposure (construction)","https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.52"],["OSHA/NIOSH: Heat","https://www.osha.gov/heat-exposure"],["OSHA: Silica","https://www.osha.gov/silica-crystalline"]]
+},
+{
+  id:"emergency", ar:"الطوارئ والتحقيق في الحوادث", en:"Emergency & Incident Investigation",
+  intro:"الاستعداد للطوارئ يقلل الخسائر. وبعد الحادث، الهدف هو معرفة السبب الجذري لا لوم الأفراد فقط.",
+  sections:[
+    {h:"خطة الطوارئ", items:[
+      "سيناريوهات: حريق، إصابة، انسكاب، انهيار، طقس.",
+      "أدوار ومسؤوليات وأرقام اتصال.",
+      "مخارج وطرق إخلاء ونقاط تجمع.",
+      "إسعافات أولية ومعدات، وتدريبات دورية."]},
+    {h:"عند وقوع حادث", items:[
+      "1. أمّن المكان وحماية الأشخاص.",
+      "2. إسعاف الإصابات وطلب المساعدة.",
+      "3. أبلغ المشرف حسب الإجراء.",
+      "4. حافظ على الموقع كما هو لو ممكن.",
+      "5. حقق وسجّل."]},
+    {h:"التحقيق", items:[
+      "اجمع الحقائق: صور، شهود، مستندات، حالة المعدات.",
+      "حلل: 5 Whys أو مخطط عظمة السمكة.",
+      "حدد السبب الجذري (النظام، الإجراء، التدريب، المعدة).",
+      "إجراءات تصحيحية ووقائية بمسؤول وموعد ومتابعة.",
+      "شارك الدروس المستفادة."]},
+    {h:"الإنعاش القلبي الرئوي CPR (للمدربين)", items:["اتصل بالإسعاف.","اضغط على منتصف الصدر بقوة وبسرعة.","استخدم AED لو متوفر وتتبع تعليماته."]}
+  ],
+  warn:"تدريب الإسعافات الأولية والـ CPR يتم عند جهة معتمدة. المعلومات هنا تعريفية.",
+  refs:[["OSHA: Emergency Preparedness","https://www.osha.gov/emergency-preparedness"],["OSHA: Incident Investigation","https://www.osha.gov/sites/default/files/publications/OSHA3895.pdf"]]
+}
+];
+
+</script>
+<script>
+/* بنك أسئلة المقابلات: [الباب, السؤال EN, السؤال AR, نموذج إجابة EN, الإجابة AR] */
+window.OHS = window.OHS || {};
+window.OHS.questions = [
+// basics
+["basics","What is the difference between a hazard and a risk?","إيه الفرق بين الخطر (hazard) والمخاطرة (risk)؟","A hazard is something that can cause harm, like a live wire. Risk is the chance that harm happens, combined with how serious it would be.","الـ hazard هو مصدر الأذى زي سلك كهرباء مكشوف. الـ risk هو احتمال حدوث الأذى مع شدته."],
+["basics","Explain the hierarchy of controls.","اشرح هرم وسائل التحكم.","From most to least effective: eliminate the hazard, substitute it, use engineering controls, use administrative controls, and last, PPE. I always try the highest level that is practical.","من الأقوى للأضعف: إزالة، استبدال، ضوابط هندسية، ضوابط إدارية، ثم PPE. أبدأ بأقوى وسيلة ممكنة."],
+["basics","How do you carry out a risk assessment?","إزاي بتعمل تقييم مخاطر؟","I identify the hazards, decide who could be harmed and how, rate the risk, choose controls using the hierarchy, record it, and review it when the work changes.","أحدد الأخطار، من يتأثر وكيف، أقدر المخاطرة، أختار الضوابط حسب الهرم، أوثّق وأراجع عند تغير العمل."],
+["basics","What is a near miss and why report it?","يعني إيه near miss وليه نبلّغ عنه؟","A near miss is an event that did not cause injury but could have. Reporting it lets us fix the cause before someone gets hurt.","واقعة كادت تسبب إصابة. الإبلاغ يسمح بإصلاح السبب قبل ما حد يتأذى."],
+["basics","What would you do if you see a worker doing an unsafe act?","لو شفت عامل بيعمل تصرف غير آمن هتعمل إيه؟","I stop the work if there is immediate danger, explain the risk calmly, correct the method, and find out why it happened, such as lack of training or tools. Then I report it and follow up.","أوقف العمل لو الخطر مباشر، وأشرح بهدوء، وأصحح الطريقة، وأعرف السبب (تدريب؟ أدوات؟). وأبلغ وأتابع."],
+["basics","What is a JSA and when do you use it?","يعني إيه JSA ومتى تستخدمه؟","A Job Safety Analysis breaks a task into steps, identifies the hazards in each step, and sets controls. I use it for new, non-routine or high-risk tasks.","تحليل سلامة المهمة: أقسم المهمة لخطوات وأحدد الخطر والضبط لكل خطوة، للمهام الجديدة أو الخطرة."],
+["basics","What does TRIR mean and how is it calculated?","يعني إيه TRIR وإزاي يتحسب؟","Total Recordable Incident Rate. Under OSHA's method it is the number of recordable cases times 200,000, divided by total hours worked.","معدل الإصابات المسجلة. = عدد الحالات المسجلة × 200,000 ÷ إجمالي ساعات العمل (طريقة OSHA)."],
+// ppe
+["ppe","Why is PPE the last line of defence?","ليه الـ PPE آخر خط دفاع؟","It protects only the wearer, depends on correct use, and does not remove the hazard. Higher-level controls are more reliable.","لأنه يحمي لابسه فقط ويعتمد على الاستخدام الصحيح ولا يزيل الخطر."],
+["ppe","How do you choose the right glove?","إزاي تختار القفاز المناسب؟","I look at the hazard: cut, heat, chemical or electrical. For chemicals I check the SDS and the glove manufacturer's chart because no glove fits all.","حسب الخطر (قطع، حرارة، كيماويات، كهرباء) وأراجع الـ SDS وجدول الشركة المصنعة."],
+["ppe","What do you check before using a safety helmet?","بتفحص إيه قبل لبس الخوذة؟","Cracks, dents, worn straps or suspension, and the manufacture or expiry date. I replace it after a heavy impact.","شروخ، طعجات، أحزمة وتعليق تالف، وتاريخ التصنيع أو الانتهاء. وأبدلها بعد صدمة قوية."],
+["ppe","Is a dust mask enough for gas or vapours?","هل كمامة الغبار كفاية للغازات؟","No. A dust mask only filters particles. Gases need the right cartridge and respirator program, and an oxygen-deficient place needs supplied or self-contained air.","لا. كمامة الغبار للجسيمات فقط. الغازات تحتاج فلتر مناسب وبرنامج تنفس، والمكان ناقص الأكسجين يحتاج هواء مورد أو ذاتي."],
+["ppe","What is a respirator fit test?","يعني إيه fit test لقناع التنفس؟","A test to confirm the mask seals on the user's face. A beard or poor fit can make it fail.","اختبار للتأكد أن القناع محكم على وجه المستخدم. اللحية أو سوء الملاءمة تفشله."],
+// electrical
+["electrical","What are the main hazards of electricity?","إيه أهم أخطار الكهرباء؟","Shock and electrocution, burns, arc flash, and fire.","الصدمة والصعق، الحروق، القوس الكهربائي، والحريق."],
+["electrical","What do you do before working on electrical equipment?","هتعمل إيه قبل الشغل على معدة كهربائية؟","I confirm the work is allowed and I am qualified, isolate the supply, apply lock and tag, and test to prove it is dead before I touch anything.","أتأكد من التصريح وأنني مؤهل، أعزل المصدر، أضع القفل والبطاقة، وأختبر للتأكد من انعدام الجهد قبل اللمس."],
+["electrical","What is a GFCI or RCD?","إيه هو GFCI أو RCD؟","A device that trips quickly when it detects current leaking to earth. It reduces shock risk, especially with portable tools and wet areas.","جهاز يفصل بسرعة لما يحس بتسريب للأرض. يقلل خطر الصدمة خاصة مع العدد المحمولة والأماكن الرطبة."],
+["electrical","What is arc flash?","يعني إيه arc flash؟","An explosive release of heat and light from an electric arc. It can cause severe burns and blast injuries.","انطلاق حرارة وضوء من قوس كهربائي، يسبب حروقًا شديدة وإصابات انفجار."],
+["electrical","A colleague is shocked and still touching the source. What do you do?","زميلك اتصعق وما زال ملاصق للمصدر. هتعمل إيه؟","I do not touch him until the power is isolated or I am sure it is safe. I call for emergency help, then give first aid, including CPR if trained.","لا ألمسه قبل فصل الكهرباء أو التأكد من الأمان. أطلب الإسعاف، ثم أسعفه وأبدأ CPR لو مدرب."],
+["electrical","Why is a damaged extension cord dangerous?","ليه وصلة الكهرباء التالفة خطر؟","Damaged insulation can expose conductors and cause shock or fire. I tag it out and remove it from use.","العزل التالف يكشف الموصلات ويسبب صدمة أو حريق. أعلّم عليها وأسحبها من الخدمة."],
+// loto
+["loto","What is lockout/tagout?","يعني إيه lockout/tagout؟","A procedure to isolate energy sources and keep equipment from starting during maintenance, using locks and tags.","إجراء لعزل مصادر الطاقة ومنع التشغيل أثناء الصيانة بالأقفال والبطاقات."],
+["loto","Describe the main LOTO steps.","اذكر خطوات LOTO الأساسية.","Prepare, notify, shut down, isolate, lock and tag, release stored energy, verify, then do the work. At the end I remove my own lock and restart safely.","تحضير، إبلاغ، إيقاف، عزل، قفل ووسم، تفريغ الطاقة المخزنة، تحقق، ثم العمل. بعد الانتهاء أزيل قفلي وأعيد التشغيل بأمان."],
+["loto","Why is stored energy important?","ليه الطاقة المخزنة مهمة؟","Springs, pressure, capacitors and raised parts can still move or discharge after the power is off. I release or block them and verify.","النوابض والضغط والمكثفات والأجزاء المرفوعة ممكن تتحرك بعد فصل الطاقة. أفرّغها أو أثبتها وأتحقق."],
+["loto","Who removes a lock?","مين يشيل القفل؟","The person who placed it. Removal by someone else only follows a documented company procedure.","اللي وضعه. إزالته بواسطة غيره بإجراء رسمي موثق فقط."],
+["loto","Is pressing the stop button isolation?","هل الضغط على زر الإيقاف يعتبر عزل؟","No. A control stop can be bypassed or fail. Isolation needs a physical energy-isolating device such as a breaker or valve with a lock.","لا. الزر ممكن يعطل أو يتجاوز. العزل يكون بجهاز فصل فعلي زي قاطع أو محبس مع قفل."],
+// height
+["height","When is fall protection required?","إمتى تحتاج حماية من السقوط؟","It depends on the standard and the work. Examples from OSHA: construction unprotected edges at 6 feet, general industry at 4 feet, scaffolds above 10 feet, with special rules for leading edges, holes and dangerous equipment. I follow the rule that applies on my site.","يعتمد على المعيار. مثلًا OSHA إنشاءات 6 أقدام وصناعة عامة 4 أقدام. أتبع الأشد المطبق بالموقع."],
+["height","What is the order of fall protection measures?","إيه ترتيب وسائل الحماية من السقوط؟","Avoid working at height first, then collective protection like guardrails, then personal fall arrest, with a rescue plan.","تجنب العمل على ارتفاع، ثم حماية جماعية (درابزين)، ثم نظام إيقاف السقوط الشخصي مع خطة إنقاذ."],
+["height","What does a personal fall arrest system include?","إيه مكونات نظام إيقاف السقوط؟","A full body harness, connector such as a lanyard or SRL, and a strong anchor point. It also needs a rescue plan and enough clearance.","حزام جسم كامل، وصلة (lanyard أو SRL)، ونقطة تثبيت قوية. ومعها خطة إنقاذ ومسافة خلوص كافية."],
+["height","What is clearance distance?","يعني إيه clearance distance؟","The free space needed below the anchor so a worker does not hit the ground or an object during a fall, including lanyard length, deceleration and harness stretch.","المسافة الفارغة تحت نقطة التثبيت لمنع الارتطام أثناء السقوط، وتشمل طول الوصلة ومسافة التباطؤ ومط الحزام."],
+["height","What is suspension trauma?","يعني إيه suspension trauma؟","A dangerous condition from hanging motionless in a harness, which can reduce blood flow. It is why a quick rescue plan matters.","حالة خطيرة من التعليق بدون حركة في الحزام وتقلل تدفق الدم، ولهذا الإنقاذ السريع مهم."],
+["height","How do you use a ladder safely?","إزاي تستخدم السلم بأمان؟","Inspect it, set it on firm ground at about 4 to 1, extend it above the landing, keep three points of contact, and keep metal ladders away from electricity.","أفحصه، أضعه على أرض ثابتة بنسبة 4:1 تقريبًا، يمتد فوق نقطة الوصول، ثلاث نقاط تلامس، وأبعد المعدني عن الكهرباء."],
+// scaffold
+["scaffold","Who can erect or alter a scaffold?","مين يركب أو يعدل السقالة؟","Trained workers under the supervision of a competent person, following the manufacturer's instructions and the approved design.","عمال مدربون تحت إشراف شخص مختص، حسب تعليمات المصنع والتصميم المعتمد."],
+["scaffold","What do you check before using a scaffold?","بتفحص إيه قبل استخدام السقالة؟","Valid inspection tag, base plates on firm ground, braces and ties in place, complete platforms, guardrails, safe access, and no overload or power line nearby.","بطاقة فحص سارية، لوح قاعدة على أرض صلبة، دعامات وأربطة، منصات كاملة، درابزين، وصول آمن، لا حمل زائد ولا خط كهرباء قريب."],
+["scaffold","What is a scaffold tag system?","يعني إيه نظام بطاقات السقالة؟","Tags show whether the scaffold is inspected and safe to use, for example green for ready and red for do not use. The exact system is set by the company.","بطاقات توضح حالة السقالة، مثلًا أخضر صالح وأحمر ممنوع. النظام يحدده صاحب العمل."],
+["scaffold","What should you do if a scaffold looks unsafe?","لو السقالة شكلها مش آمن؟","I do not use it, tag it out, tell my supervisor, and wait for a competent person to inspect and fix it.","لا أستخدمها، أعلّق بطاقة ممنوع، وأبلغ المشرف وانتظر المختص."],
+["scaffold","How much load must a scaffold support?","السقالة لازم تتحمل كام؟","Under OSHA it must support its own weight and at least four times the maximum intended load. I never exceed the rated capacity.","في OSHA تتحمل وزنها و4 أضعاف أقصى حمل مقصود على الأقل. ولا أتجاوز السعة."],
+["scaffold","How do you move a mobile scaffold?","إزاي تحرك سقالة متحركة؟","Clear people and loose materials, check the route and overhead hazards, push at the base, and lock the wheels at the new position.","أخلي الناس والمواد، أفحص المسار والمخاطر العلوية، أدفع من القاعدة وأقفل العجلات."],
+// lifting
+["lifting","What must you do before a crane lift?","هتعمل إيه قبل الرفع بالرافعة؟","Review the lift plan, load weight and radius, check the load chart, ground and outriggers, inspect the equipment and rigging, set an exclusion zone and check overhead power lines.","أراجع خطة الرفع، وزن الحمل ونصف القطر وجدول الحمولة، الأرض والدعامات، فحص المعدة والتربيط، منطقة محظورة والكهرباء العلوية."],
+["lifting","What is a load chart?","يعني إيه load chart؟","A chart from the manufacturer that shows the allowed load for each boom length, radius and configuration.","جدول من المصنع بيوضح الحمولة المسموحة حسب طول الذراع ونصف القطر والتشكيل."],
+["lifting","What does the signal person do?","المشير بيعمل إيه؟","Gives clear, agreed signals to the operator, keeps the load in view or uses a relay, and stops the lift in any danger.","يعطي إشارات واضحة متفق عليها للمشغل ويراقب الحمل ويوقف الرفع عند الخطر."],
+["lifting","Why does sling angle matter?","ليه زاوية الحبل مهمة؟","As the angle to horizontal gets smaller, tension in each leg increases, so the sling's effective capacity falls.","كلما قلت الزاوية مع الأفقي، زاد الشد في كل فرع، فتقل السعة الفعلية."],
+["lifting","What do you do if the load starts to swing?","لو الحمل بدأ يتأرجح؟","I stop, lower or stabilise safely using tag lines, keep people clear, and find the cause before continuing.","أوقف وأثبت الحمل بأمان بالحبال، وأبعد الناس، وأعرف السبب قبل الاستمرار."],
+["lifting","What is the safe distance from overhead power lines?","إيه المسافة الآمنة من الخطوط العلوية؟","It depends on the equipment and voltage. For cranes, OSHA 1926.1408 uses a line confirmed by the utility as de-energised and visibly grounded, a 20 foot clearance (only for lines up to 350 kV; over 350 through 1,000 kV it becomes 50 feet under 1926.1409, and above 1,000 kV the utility owner or a registered professional engineer sets it), or the Table A distance (10 feet up to 50 kV, 15 feet over 50 to 200 kV, 20 feet over 200 to 350 kV, and more above that). Scaffolds use the 1926.451(f)(6) tables, which depend on whether the line is insulated and on its voltage, and unqualified persons have their own rules. I follow the site rules and the line owner.","حسب المعدة والجهد. للرافعات (1926.1408): تأكيد الجهة المالكة أن الخط مفصول ومؤرض بشكل مرئي، أو 20 قدم (للخطوط حتى 350 ك.ف فقط؛ فوق 350 حتى 1000 ك.ف تصبح 50 قدم حسب 1926.1409، وفوق 1000 ك.ف تحددها الجهة المالكة أو مهندس مؤهل)، أو جدول A (10 أقدام حتى 50 ك.ف، 15 فوق 50 حتى 200، 20 فوق 200 حتى 350 وأكثر بعدها). والسقالات لها جداول 1926.451(f)(6) حسب العزل والجهد، وغير المؤهلين لهم قواعدهم. وأتبع قواعد الموقع وجهة مالكة الخط."],
+// confined
+["confined","What is a confined space?","يعني إيه confined space؟","A space large enough to enter, with limited ways in or out, and not designed for continuous occupancy.","مكان يسمح بالدخول، مداخله ومخارجه محدودة، وغير مصمم للإشغال المستمر."],
+["confined","What makes a confined space permit-required?","إيه اللي يخلي المكان المحصور يحتاج تصريح؟","A hazardous atmosphere, a risk of engulfment, converging walls or a sloping floor that could trap someone, or any other serious hazard.","جو خطر، خطر ابتلاع، جدران متقاربة أو أرضية مائلة تحبس الشخص، أو أي خطر خطير آخر."],
+["confined","What are the roles in a permit-required entry?","إيه الأدوار في الدخول بتصريح؟","Entrant, attendant and entry supervisor. The attendant stays outside, monitors, and calls rescue but never enters to rescue.","الداخل، المراقب، ومشرف الدخول. المراقب يبقى بالخارج ويستدعي الإنقاذ ولا يدخل."],
+["confined","In what order do you test the atmosphere?","بتختبر الجو بأي ترتيب؟","Oxygen first, then flammable gases or vapours, then toxic gases, using a calibrated direct-reading instrument.","الأكسجين أولًا، ثم الغازات القابلة للاشتعال، ثم السموم، بجهاز معاير."],
+["confined","Is an air line enough in an oxygen-deficient IDLH atmosphere?","هل خط الهواء وحده كفاية في جو ناقص أكسجين IDLH؟","No. Under 29 CFR 1910.134(d)(2) (applied to construction by 1926.103), oxygen-deficient atmospheres are treated as IDLH unless the employer shows oxygen stays within the allowed range under all foreseeable conditions. For IDLH you need a full-facepiece pressure-demand SCBA, or a full-facepiece pressure-demand supplied-air respirator with an auxiliary self-contained air supply. Respiratory equipment alone does not authorise entry.","لا. حسب 1910.134(d)(2) (وتحيل إليه 1926.103) الجو ناقص الأكسجين يُعتبر IDLH إلا لو أُثبت أن الأكسجين يبقى ضمن النطاق المسموح تحت كل الظروف. في IDLH المطلوب SCBA بقناع كامل وضغط موجب، أو SAR بقناع كامل وضغط موجب مع مصدر هواء ذاتي مساعد. ومعدات التنفس وحدها لا تعني السماح بالدخول."],
+["confined","What happens if a prohibited condition appears during entry?","ماذا يحدث لو ظهرت حالة ممنوعة أثناء الدخول؟","The entry supervisor ends the entry. If the condition is temporary and does not change the space or create new hazards, the permit is suspended or cancelled and the space is fully reassessed before re-entry. Otherwise the permit is cancelled.","مشرف الدخول ينهي الدخول. لو الحالة مؤقتة ولا تغير المكان ولا تخلق أخطارًا جديدة: تعليق أو إلغاء التصريح وإعادة تقييم كاملة قبل العودة. غير ذلك يُلغى التصريح."],
+["confined","What are alternate entry procedures?","يعني إيه alternate procedures؟","An option under 1926.1203(e) only if all conditions are met: physical hazards are eliminated or isolated so the only hazard is atmospheric, continuous forced-air ventilation alone keeps the space safe and entrants can exit if it stops, monitoring data supports this, any initial data-gathering entry follows the full permit rules, it is documented, and entry follows the (e)(2) steps including pre-entry testing, continuous ventilation, monitoring and a written certification. Otherwise the full permit program applies.","خيار في 1926.1203(e) بشرط تحقق كل الشروط: الأخطار الفيزيائية مزالة أو معزولة والخطر الوحيد جوي، والتهوية القسرية المستمرة وحدها كافية والداخلون يقدرون يخرجوا لو توقفت، وبيانات مراقبة تدعم ذلك، وأي دخول أولي لجمع البيانات يتم بالتصريح الكامل، وتوثيق، والدخول حسب (e)(2) من اختبار جو وتهوية ومراقبة وشهادة مكتوبة. غير كده يطبق التصريح الكامل."],
+// fire
+["fire","What are the elements of fire?","إيه عناصر الحريق؟","Fuel, oxygen and heat form the fire triangle. Removing one stops the fire.","وقود وأكسجين وحرارة، وإزالة واحد منها يطفئ النار."],
+["fire","What is needed before hot work?","إيه المطلوب قبل العمل الساخن؟","A hot work permit, cleared or protected surroundings, a ready extinguisher, gas checks where needed, and a fire watch.","تصريح عمل ساخن، منطقة نظيفة أو محمية، طفاية جاهزة، فحص غازات عند الحاجة، ومراقب حريق."],
+["fire","What does PASS stand for?","إيه معنى PASS؟","Pull the pin, Aim at the base, Squeeze the handle, Sweep side to side.","اسحب المسمار، وجّه للقاعدة، اضغط، حرّك يمين ويسار."],
+["fire","When should you fight a fire and when evacuate?","إمتى تطفي النار وإمتى تخلي؟","I fight it only if it is small, I am trained, have the right extinguisher and an exit behind me. Otherwise I raise the alarm and evacuate.","أطفئ فقط لو صغير ومدرب وعندي طفاية مناسبة ومخرج خلفي. غير كده أنذر وأخلي."],
+["fire","How do you store gas cylinders?","إزاي تخزن أسطوانات الغاز؟","Upright, secured, with caps on, away from heat, and with oxygen separated from fuel gases and oil or grease.","رأسيًا ومثبتة وبالأغطية، بعيدًا عن الحرارة، والأكسجين بعيد عن غازات الوقود والزيوت."],
+// chem
+["chem","What is an SDS?","يعني إيه SDS؟","A Safety Data Sheet with 16 sections covering hazards, handling, storage, first aid, spills, exposure controls and more.","صحيفة بيانات سلامة من 16 قسمًا عن الأخطار والمناولة والتخزين والإسعاف والانسكاب."],
+["chem","What does GHS do?","إيه فائدة GHS؟","The Globally Harmonized System standardises classification, labels, pictograms and safety data sheets.","نظام عالمي يوحد التصنيف والوسم والرموز وصحائف السلامة."],
+["chem","How do you respond to a chemical splash in the eyes?","لو رشاش مادة كيميائية في العين؟","Go to the eyewash station immediately and flush continuously, usually for 15 minutes, hold the eyelids open, and get medical help, bringing the SDS.","أروح لمحطة غسيل العين فورًا وأغسل باستمرار غالبًا 15 دقيقة وأفتح الجفون وأطلب مساعدة طبية ومعي الـ SDS."],
+["chem","Why separate incompatible chemicals?","ليه نفصل المواد غير المتوافقة؟","They can react violently or release toxic gas, for example acids with bases or oxidisers with flammables.","ممكن تتفاعل بعنف أو تطلق غازات سامة، زي الأحماض مع القلويات والمؤكسدات مع القابلة للاشتعال."],
+["chem","What would you do about a small chemical spill?","هتعمل إيه في انسكاب صغير؟","Warn others, isolate the area, check the SDS, wear the right PPE, contain and clean up with the spill kit, dispose of waste properly and report it.","أنبه الآخرين وأعزل المكان وأراجع SDS وألبس PPE وأحتوي وأنظف بعدة الانسكاب وأتخلص من المخلفات وأبلغ."],
+// excavation
+["excavation","When is a protective system required for a trench?","إمتى تحتاج الخنادق نظام حماية؟","OSHA 1926.652 requires a protective system unless the excavation is entirely in stable rock, or is under 5 feet deep and a competent person finds no indication of a potential cave-in. So 5 feet is not an absolute line.","حسب OSHA 1926.652 مطلوب إلا لو الحفر كله في صخر ثابت، أو أقل من 5 أقدام وفحص مختص ولا يوجد مؤشر انهيار. يعني 5 أقدام ليست حدًا مطلقًا."],
+["excavation","What are the types of protective systems?","إيه أنواع أنظمة الحماية؟","Sloping or benching, shoring, and shielding with a trench box.","تدريج الميل أو المدرجات، التدعيم، والدرع (trench box)."],
+["excavation","What do you do before digging?","هتعمل إيه قبل الحفر؟","Locate underground utilities, have a competent person assess the soil and site, plan access, drainage and protection, and set barriers.","أحدد الخدمات تحت الأرض، مختص يقيّم التربة والموقع، خطة للدخول والصرف والحماية، وحواجز."],
+["excavation","Where should spoil be placed?","فين نحط ناتج الحفر؟","At least 2 feet (0.6 m) from the edge in OSHA rules, so it does not fall in or load the walls.","على بعد 2 قدم (0.6 م) على الأقل من الحافة حسب OSHA."],
+["excavation","How do workers get out of a trench?","إزاي العمال يخرجوا من الخندق؟","With a ladder, stairway or ramp so that lateral travel to the exit does not exceed 25 feet when the trench is 4 feet or deeper.","بسلم أو درج أو منحدر بحيث لا يزيد المشي الجانبي للخروج عن 25 قدم في الخنادق بعمق 4 أقدام أو أكثر."],
+// health
+["health","How do you control noise?","إزاي تتحكم في الضوضاء؟","Reduce it at the source, isolate it, limit exposure time, then provide hearing protection and audiometry. In OSHA general industry the hearing conservation program starts at an 8-hour average of 85 dBA, while the permissible exposure limit is 90 dBA.","تقليل المصدر، العزل، تقليل زمن التعرض، ثم حماية السمع وفحوص السمع. في OSHA الصناعة العامة برنامج حماية السمع يبدأ عند 85 ديسيبل (متوسط 8 ساعات) والحد المسموح 90 ديسيبل."],
+["health","What are the signs of heat stroke and what do you do?","إيه علامات ضربة الحرارة وتعمل إيه؟","Confusion, very hot skin, collapse, sometimes no sweating. It is an emergency: call for help and cool the person right away.","تشوش وحرارة شديدة وفقد وعي وأحيانًا توقف التعرق. حالة طارئة: أطلب الإسعاف وأبرد المصاب فورًا."],
+["health","How do you lift manually and safely?","إزاي ترفع يدويًا بأمان؟","Assess the load, use mechanical help or a team if heavy, keep the load close, bend the knees, avoid twisting, and move smoothly.","أقيّم الحمل، أستعين بأداة أو زملاء لو ثقيل، أقرّب الحمل، أثني ركبتي، وأتجنب الالتواء."],
+["health","Why is silica dust a concern?","ليه غبار السيليكا خطر؟","Breathing respirable crystalline silica can cause silicosis and other lung diseases. Controls include water, extraction and proper respirators.","استنشاقه يسبب السحار السيليسي وأمراض رئة. التحكم بالماء والشفط وأجهزة تنفس مناسبة."],
+["health","What are the welfare facilities a site should provide?","إيه مرافق الرعاية في الموقع؟","Drinking water, toilets, washing facilities, shade or rest areas, and first aid.","مياه شرب، دورات مياه، غسيل، أماكن راحة وظل، وإسعافات."],
+// emergency
+["emergency","What should an emergency response plan include?","إيه محتويات خطة الطوارئ؟","Scenarios, roles, contact numbers, alarms, evacuation routes, muster points, first aid and drills.","سيناريوهات، أدوار، أرقام اتصال، إنذارات، مخارج، نقاط تجمع، إسعافات، وتدريبات."],
+["emergency","What are your first steps after an accident?","إيه أول خطواتك بعد حادث؟","Make the area safe, help the injured and call emergency services, notify the supervisor, preserve the scene and record details.","أؤمن المكان، أسعف المصابين وأطلب الإسعاف، أبلغ المشرف، أحافظ على الموقع وأسجل."],
+["emergency","How do you investigate an incident?","إزاي تحقق في حادث؟","Collect facts, interview witnesses, analyse causes with tools like 5 Whys, find root causes, set corrective actions with owners and dates, and share lessons.","أجمع الحقائق، أقابل الشهود، أحلل بـ 5 Whys، أحدد السبب الجذري، إجراءات بمسؤول وموعد، وأشارك الدروس."],
+["emergency","What is a root cause?","يعني إيه root cause؟","The underlying system-level cause that, if fixed, prevents the same incident from happening again, not just the immediate trigger.","السبب الأساسي في النظام لو اتعالج ما يتكررش الحادث، مش مجرد السبب المباشر."],
+["emergency","What is an assembly point?","يعني إيه assembly point؟","A safe place away from the hazard where people gather after evacuation so they can be counted.","مكان آمن بعيد عن الخطر يتجمع فيه الناس بعد الإخلاء ليتم العد."],
+// general interview
+["basics","Why do you want to work in health and safety?","ليه عايز تشتغل في السلامة؟","I want to protect people and help teams finish work without harm. I enjoy finding practical fixes and working with workers to build good habits.","عايز أحمي الناس وأساعد الفرق تخلص الشغل بدون أذى، وبحب الحلول العملية والتعاون مع العمال."],
+["basics","Tell me about a time you stopped unsafe work.","احكي عن موقف أوقفت فيه عملًا غير آمن.","Use the STAR method: Situation, Task, Action, Result. Describe the hazard, what you did to stop it, how you communicated, and the improvement afterward. Use only real experience.","استخدم طريقة STAR: الموقف، المهمة، التصرف، النتيجة. اشرح الخطر وكيف أوقفته وكيف تواصلت وما تحسن بعدها. استخدم تجربة حقيقية فقط."]
+];
+
+</script>
+<script>
+/* رسومات توضيحية تعليمية (SVG مدمجة). كل رسمة مرتبطة بـ id الباب في data-topics.js.
+   الألوان تتبع متغيرات التصميم (var(--brand) إلخ) فتتغير مع الوضع الليلي تلقائيًا. */
+window.OHS = window.OHS || {};
+window.OHS.illus = {
+
+hero:`<svg viewBox="0 0 360 220" role="img" aria-label="درع سلامة وخوذة"><circle cx="58" cy="182" r="10" fill="#ffffff" opacity=".3"/><circle cx="312" cy="48" r="14" fill="#ffffff" opacity=".25"/><circle cx="302" cy="172" r="7" fill="#ffffff" opacity=".35"/><path d="M180 26l86 30v64c0 56-38 92-86 104-48-12-86-48-86-104V56z" fill="#ffffff" opacity=".16"/><path d="M180 42l68 24v52c0 45-30 74-68 84-38-10-68-39-68-84V66z" fill="#ffffff"/><path d="M152 120l20 20 40-44" stroke="var(--brand)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M152 40a28 24 0 0 1 56 0z" fill="#f5b74a"/><rect x="142" y="37" width="76" height="9" rx="4.5" fill="#f5b74a"/></svg>`,
+
+basics:`<svg viewBox="0 0 320 200" role="img" aria-label="هرم وسائل التحكم"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="24" y="26" width="272" height="30" rx="6" fill="var(--brand)"/><rect x="48" y="60" width="224" height="30" rx="6" fill="var(--brand)" opacity=".8"/><rect x="72" y="94" width="176" height="30" rx="6" fill="var(--brand)" opacity=".62"/><rect x="96" y="128" width="128" height="30" rx="6" fill="var(--brand)" opacity=".45"/><rect x="120" y="162" width="80" height="26" rx="6" fill="var(--brand)" opacity=".3"/><text direction="ltr" x="160" y="46" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">1</text><text direction="ltr" x="160" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">2</text><text direction="ltr" x="160" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">3</text><text direction="ltr" x="160" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">4</text><text direction="ltr" x="160" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="var(--brand)">5</text></svg>`,
+
+ppe:`<svg viewBox="0 0 320 200" role="img" aria-label="معدات الوقاية الشخصية"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><circle cx="160" cy="86" r="24" fill="#f0c08a"/><path d="M132 84a28 26 0 0 1 56 0z" fill="var(--acc)"/><rect x="124" y="81" width="72" height="8" rx="4" fill="var(--acc)"/><rect x="141" y="89" width="16" height="9" rx="4" fill="var(--ink)"/><rect x="163" y="89" width="16" height="9" rx="4" fill="var(--ink)"/><rect x="156" y="91" width="8" height="2.5" fill="var(--ink)"/><path d="M122 184v-38a14 14 0 0 1 14-14h48a14 14 0 0 1 14 14v38z" fill="var(--brand)"/><rect x="138" y="132" width="8" height="52" fill="#ffffff" opacity=".85"/><rect x="174" y="132" width="8" height="52" fill="#ffffff" opacity=".85"/><rect x="122" y="156" width="76" height="8" fill="#ffffff" opacity=".85"/></svg>`,
+
+electrical:`<svg viewBox="0 0 320 200" role="img" aria-label="برج كهرباء ومسافة أمان"><circle cx="170" cy="102" r="88" fill="var(--soft)"/><rect x="40" y="170" width="240" height="5" rx="2.5" fill="var(--line)"/><path d="M142 170L154 62h12l12 170" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/><path d="M118 74h84M126 96h68" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/><path d="M147 138l26-28M173 138l-26-28" stroke="var(--ink)" stroke-width="3"/><path d="M30 74q45 22 88 0M202 74q45 22 88 0" stroke="var(--muted)" stroke-width="3" fill="none"/><path d="M238 92l-15 25h10l-7 21 19-26h-11l8-20z" fill="var(--acc)"/><path d="M56 90v72" stroke="var(--brand)" stroke-width="3"/><path d="M50 98l6-10 6 10M50 154l6 10 6-10" stroke="var(--brand)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+
+loto:`<svg viewBox="0 0 320 200" role="img" aria-label="قفل وتعليق على مصدر طاقة"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="78" y="42" width="164" height="116" rx="14" fill="var(--card)" stroke="var(--line)" stroke-width="3"/><rect x="198" y="64" width="22" height="54" rx="11" fill="var(--line)"/><circle cx="209" cy="106" r="10" fill="var(--muted)"/><path d="M132 96v-14a18 18 0 0 1 36 0v14" fill="none" stroke="var(--ink)" stroke-width="9"/><rect x="120" y="94" width="60" height="48" rx="10" fill="var(--acc)"/><circle cx="150" cy="114" r="6" fill="var(--ink)"/><rect x="147.5" y="116" width="5" height="12" rx="2.5" fill="var(--ink)"/><path d="M180 116q10 8 13 14" stroke="var(--ink)" stroke-width="2" fill="none"/><rect x="188" y="128" width="34" height="20" rx="4" fill="#d64545"/><circle cx="195" cy="138" r="3" fill="#ffffff"/></svg>`,
+
+height:`<svg viewBox="0 0 320 200" role="img" aria-label="عامل مربوط بحبل أمان على سطح"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="36" y="118" width="150" height="58" fill="#d9d2c2"/><rect x="36" y="112" width="150" height="8" fill="#b9b09c"/><rect x="62" y="104" width="16" height="8" rx="2" fill="var(--ink)"/><circle cx="150" cy="66" r="9" fill="var(--ink)"/><path d="M141 64a9 8 0 0 1 18 0z" fill="var(--acc)"/><path d="M150 76v28" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/><path d="M150 84l-12 8M150 84l12 6" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><path d="M150 104l-9 12M150 104l9 12" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/><circle cx="150" cy="88" r="4" fill="var(--brand)"/><path d="M150 88Q112 96 78 108" stroke="var(--brand)" stroke-width="3.5" fill="none"/><rect x="196" y="172" width="96" height="5" rx="2.5" fill="var(--line)"/><path d="M212 120v50" stroke="var(--brand)" stroke-width="3"/><path d="M206 128l6-10 6 10M206 162l6 10 6-10" stroke="var(--brand)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+
+scaffold:`<svg viewBox="0 0 320 200" role="img" aria-label="سقالة بمرتفعات وحاجز"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="34" y="172" width="252" height="5" rx="2.5" fill="var(--line)"/><path d="M70 172V72M160 172V72M250 172V72" stroke="var(--ink)" stroke-width="5"/><path d="M70 104h180M70 138h180" stroke="var(--ink)" stroke-width="4"/><path d="M70 172L160 104M160 172L70 104M160 172L250 104M250 172L160 104" stroke="var(--muted)" stroke-width="3"/><rect x="60" y="64" width="200" height="9" rx="2" fill="#c99a63"/><path d="M70 64V34M160 64V34M250 64V34" stroke="var(--brand)" stroke-width="4"/><path d="M70 36h180M70 50h180" stroke="var(--brand)" stroke-width="4"/><path d="M262 172V80M274 172V80" stroke="var(--acc)" stroke-width="4"/><path d="M262 92h12M262 110h12M262 128h12M262 146h12M262 164h12" stroke="var(--acc)" stroke-width="3"/></svg>`,
+
+lifting:`<svg viewBox="0 0 320 200" role="img" aria-label="رافعة ترفع حمولة قرب خط كهرباء"><circle cx="170" cy="106" r="88" fill="var(--soft)"/><path d="M30 34h260" stroke="var(--muted)" stroke-width="3"/><path d="M282 20l-8 13h6l-4 11 10-14h-6l5-10z" fill="var(--acc)"/><rect x="52" y="150" width="92" height="20" rx="6" fill="var(--ink)"/><circle cx="70" cy="174" r="8" fill="var(--ink)"/><circle cx="130" cy="174" r="8" fill="var(--ink)"/><rect x="58" y="126" width="30" height="24" rx="5" fill="var(--brand)"/><path d="M86 128L214 58" stroke="var(--acc)" stroke-width="7" stroke-linecap="round"/><path d="M214 58v52" stroke="var(--ink)" stroke-width="2.5"/><rect x="208" y="110" width="12" height="10" fill="var(--ink)"/><path d="M214 120l-18 16M214 120l18 16" stroke="var(--ink)" stroke-width="2.5"/><rect x="182" y="136" width="64" height="30" rx="3" fill="var(--brand)"/><path d="M196 140v22M210 140v22M224 140v22" stroke="var(--soft)" stroke-width="3"/><path d="M236 38v14" stroke="var(--brand)" stroke-width="3"/><path d="M231 44l5-8 5 8M231 48l5 8 5-8" stroke="var(--brand)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+
+confined:`<svg viewBox="0 0 320 200" role="img" aria-label="دخول مكان محصور بحامل ثلاثي ومراقب"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="36" y="118" width="248" height="6" rx="3" fill="var(--line)"/><rect x="96" y="124" width="128" height="60" rx="10" fill="#33424a"/><ellipse cx="160" cy="124" rx="26" ry="7" fill="#10181c"/><path d="M160 58L120 118M160 58L200 118M160 58L160 116" stroke="var(--acc)" stroke-width="5" stroke-linecap="round"/><circle cx="160" cy="58" r="8" fill="var(--ink)"/><path d="M160 66v44" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="4 3"/><circle cx="248" cy="84" r="8" fill="var(--ink)"/><path d="M240 82a8 7 0 0 1 16 0z" fill="var(--acc)"/><path d="M248 93v24" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/><path d="M248 99l-10 7M248 99l10 6" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><path d="M248 117l-8 12M248 117l8 12" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/></svg>`,
+
+fire:`<svg viewBox="0 0 320 200" role="img" aria-label="طفاية حريق ولهب"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="104" y="86" width="58" height="92" rx="16" fill="#d64545"/><rect x="126" y="72" width="14" height="16" fill="var(--ink)"/><path d="M112 72h42" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/><path d="M120 64h28" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/><path d="M140 76q34 6 30 34" stroke="var(--ink)" stroke-width="5" fill="none"/><path d="M166 104l15 6-13 10z" fill="var(--ink)"/><rect x="114" y="110" width="38" height="24" rx="4" fill="#ffffff" opacity=".92"/><path d="M119 117h28M119 123h28M119 129h20" stroke="#d64545" stroke-width="3"/><path d="M226 176c-15-5-22-17-18-32 3-10 9-14 12-25 2 6 6 9 6 9s-1-12 8-22c10 12 16 22 15 37-1 14-9 26-23 33z" fill="var(--acc)"/><path d="M228 170c-7-4-10-10-8-18 2-5 4-7 6-12 4 5 8 9 8 16 0 7-2 11-6 14z" fill="#fde68a"/></svg>`,
+
+chem:`<svg viewBox="0 0 320 200" role="img" aria-label="رموز GHS للمواد الكيميائية"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><g transform="translate(95,102)"><rect x="-26" y="-26" width="52" height="52" rx="6" transform="rotate(45)" fill="#ffffff" stroke="#d64545" stroke-width="4"/><path d="M0 14c-8-3-11-10-9-17 2-5 5-7 6-12 1 3 3 4 3 4s0-6 4-11c6 7 8 12 7 19-1 8-5 13-11 17z" fill="var(--ink)"/></g><g transform="translate(160,102)"><rect x="-26" y="-26" width="52" height="52" rx="6" transform="rotate(45)" fill="#ffffff" stroke="#d64545" stroke-width="4"/><circle cx="0" cy="-4" r="11" fill="var(--ink)"/><rect x="-6" y="4" width="12" height="7" rx="2" fill="var(--ink)"/><circle cx="-4" cy="-5" r="2.6" fill="#ffffff"/><circle cx="4" cy="-5" r="2.6" fill="#ffffff"/></g><g transform="translate(225,102)"><rect x="-26" y="-26" width="52" height="52" rx="6" transform="rotate(45)" fill="#ffffff" stroke="#d64545" stroke-width="4"/><rect x="-3" y="-14" width="6" height="18" rx="3" fill="var(--ink)"/><circle cx="0" cy="11" r="3.5" fill="var(--ink)"/></g></svg>`,
+
+excavation:`<svg viewBox="0 0 320 200" role="img" aria-label="مقطع خندق بسلم وكومة اتربة"><circle cx="160" cy="104" r="88" fill="var(--soft)"/><rect x="30" y="78" width="260" height="98" rx="4" fill="#caa06a"/><path d="M30 78h260" stroke="#7d9b76" stroke-width="4"/><path d="M120 78h80l-24 96h-32z" fill="var(--card)"/><path d="M146 86v80M162 86v80" stroke="var(--brand)" stroke-width="4"/><path d="M146 98h16M146 114h16M146 130h16M146 146h16M146 162h16" stroke="var(--brand)" stroke-width="3"/><path d="M236 78q26-26 52 0z" fill="#a8814f"/><path d="M204 68h26" stroke="var(--brand)" stroke-width="3"/><path d="M210 62l-8 6 8 6M224 62l8 6-8 6" stroke="var(--brand)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+
+health:`<svg viewBox="0 0 320 200" role="img" aria-label="حماية السمع من الضوضاء"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><circle cx="140" cy="100" r="34" fill="#f0c08a"/><path d="M112 92a28 28 0 0 1 56 0" fill="none" stroke="var(--ink)" stroke-width="6"/><rect x="100" y="88" width="16" height="26" rx="7" fill="var(--brand)"/><rect x="164" y="88" width="16" height="26" rx="7" fill="var(--brand)"/><path d="M202 84q14 16 0 32M216 74q22 26 0 52M230 64q30 36 0 72" stroke="var(--acc)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>`,
+
+emergency:`<svg viewBox="0 0 320 200" role="img" aria-label="لافتة خروج طوارئ وحقيبة إسعاف"><circle cx="160" cy="102" r="88" fill="var(--soft)"/><rect x="44" y="40" width="118" height="56" rx="10" fill="#1e9e6a"/><circle cx="80" cy="58" r="6" fill="#ffffff"/><path d="M80 66l-6 12 8 4 4-8" stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M74 82l-6 8M82 82l6 8" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/><path d="M102 68h34M128 60l10 8-10 8" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="176" y="118" width="96" height="60" rx="12" fill="var(--card)" stroke="var(--line)" stroke-width="3"/><path d="M206 118v-8a8 8 0 0 1 8-8h20a8 8 0 0 1 8 8v8" fill="none" stroke="var(--ink)" stroke-width="4"/><rect x="214" y="130" width="20" height="34" rx="3" fill="#d64545"/><rect x="207" y="137" width="34" height="20" rx="3" fill="#d64545"/></svg>`,
+
+icon:{
+glossary:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-2-1.5-4.5-2-8-2v13c3.5 0 6 .5 8 2 2-1.5 4.5-2 8-2V4c-3.5 0-6 .5-8 2z"/><path d="M12 6v13"/></svg>`,
+topics:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>`,
+interview:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H9l-5 4z"/><path d="M10.4 8.2a1.7 1.7 0 1 1 2.4 1.6c-.8.5-.8 1.1-.8 1.9"/><circle cx="12" cy="14.6" r=".5" fill="currentColor"/></svg>`,
+sources:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.6 1.6"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.6-1.6"/></svg>`,
+sun:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5 5l1.8 1.8M17.2 17.2L19 19M19 5l-1.8 1.8M6.8 17.2L5 19"/></svg>`,
+moon:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5A8 8 0 1 1 10.5 4a6.5 6.5 0 0 0 9.5 9.5z"/></svg>`
+}
+};
+
+</script>
+<script>
+(function(){
+"use strict";
+var D=window.OHS,IL=D.illus||{},main=document.getElementById("main");
+var topicById={};D.topics.forEach(function(t){topicById[t.id]=t});
+var store={get:function(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+var TOK="\\(?[A-Za-z0-9][A-Za-z0-9.'\\/&()%+\\-]*";
+var LATIN=new RegExp(TOK+"(?: "+TOK+")*","g");
+function el(tag,attrs,kids){var e=document.createElement(tag);
+  if(attrs)for(var k in attrs){if(k==="class")e.className=attrs[k];else if(k==="text")e.textContent=attrs[k];else if(k.slice(0,2)==="on")e.addEventListener(k.slice(2),attrs[k]);else e.setAttribute(k,attrs[k])}
+  (kids||[]).forEach(function(c){if(c==null)return;e.appendChild(typeof c==="string"?document.createTextNode(c):c)});return e}
+function cnt(s,c){return s.split(c).length-1}
+function ill(id,cls){var d=el("div",{class:cls||"illus"});if(IL[id])d.innerHTML=IL[id];return d}
+function icon(name,cls){var d=el("span",{class:cls||"ico-svg","aria-hidden":"true"});if(IL.icon&&IL.icon[name])d.innerHTML=IL.icon[name];return d}
+function mixed(tag,str,cls){var e=el(tag,cls?{class:cls}:null);var last=0,m;LATIN.lastIndex=0;
+  while((m=LATIN.exec(str))){var run=m[0],pre="",post="";
+    while(run.length&&cnt(run,")")>cnt(run,"(")&&run.slice(-1)===")"){post=")"+post;run=run.slice(0,-1)}
+    while(run.length&&cnt(run,"(")>cnt(run,")")&&run.charAt(0)==="("){pre+="(";run=run.slice(1)}
+    if(m.index>last)e.appendChild(document.createTextNode(str.slice(last,m.index)));
+    if(pre)e.appendChild(document.createTextNode(pre));
+    if(/[A-Za-z(.]/.test(run))e.appendChild(el("span",{class:"en",text:run}));else if(run)e.appendChild(document.createTextNode(run));
+    if(post)e.appendChild(document.createTextNode(post));
+    last=m.index+m[0].length}
+  if(last<str.length)e.appendChild(document.createTextNode(str.slice(last)));return e}
+function norm(s){return String(s).toLowerCase().replace(/[\u064B-\u0652\u0640]/g,"").replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي")}
+
+/* search index */
+var index=[];
+D.glossary.forEach(function(g,i){index.push({g:"مصطلحات",t:g[1]+" — "+g[2],s:g[3],h:"#/glossary/t/"+i,k:norm(g.join(" "))})});
+D.topics.forEach(function(t){var txt=[t.ar,t.en,t.intro,t.warn];t.sections.forEach(function(s){txt.push(s.h);txt=txt.concat(s.items)});
+  index.push({g:"ملخصات",t:t.ar+" — "+t.en,s:t.intro,h:"#/topics/"+t.id,k:norm(txt.join(" "))})});
+D.questions.forEach(function(q,i){index.push({g:"أسئلة مقابلات",t:q[1],s:q[2],h:"#/interview/"+q[0]+"/"+i,k:norm(q.slice(1).join(" "))})});
+
+var qin=document.getElementById("q"),box=document.getElementById("results");
+function runSearch(){var v=norm(qin.value.trim());box.textContent="";
+  if(v.length<2){box.hidden=true;return}
+  var words=v.split(/\s+/),hits=index.filter(function(x){return words.every(function(w){return x.k.indexOf(w)>-1})});
+  box.hidden=false;
+  if(!hits.length){box.appendChild(el("div",{class:"res-g",text:"مفيش نتائج. جرّب كلمة تانية."}));return}
+  var by={};hits.forEach(function(h){(by[h.g]=by[h.g]||[]).push(h)});
+  Object.keys(by).forEach(function(g){box.appendChild(el("div",{class:"res-g",text:g+" ("+by[g].length+")"}));
+    by[g].slice(0,8).forEach(function(h){var a=el("a",{href:h.h,class:"res"});a.appendChild(mixed("span",h.t));a.appendChild(mixed("small",h.s));a.addEventListener("click",function(){box.hidden=true;qin.value=""});box.appendChild(a)})})}
+qin.addEventListener("input",runSearch);
+qin.addEventListener("keydown",function(e){if(e.key==="Escape"){box.hidden=true}});
+document.addEventListener("click",function(e){if(!e.target.closest(".search-wrap"))box.hidden=true});
+
+function page(nodes){main.textContent="";nodes.forEach(function(n){main.appendChild(n)});window.scrollTo(0,0)}
+
+/* theme toggle */
+var themeBtn=el("button",{id:"themeBtn",type:"button","aria-label":"تبديل الوضع الليلي","aria-pressed":"false"});
+function drawTheme(){var dk=document.documentElement.getAttribute("data-theme")==="dark";themeBtn.textContent="";themeBtn.appendChild(icon(dk?"sun":"moon"));themeBtn.setAttribute("aria-pressed",String(dk))}
+themeBtn.addEventListener("click",function(){var dk=document.documentElement.getAttribute("data-theme")!=="dark";document.documentElement.setAttribute("data-theme",dk?"dark":"light");store.set("theme",dk?"dark":"light");drawTheme()});
+document.querySelector(".top-in").appendChild(themeBtn);drawTheme();
+
+/* views */
+function home(){
+  var cards=[
+   ["#/glossary","glossary","قاموس المصطلحات","أكتر من "+(Math.floor(D.glossary.length/10)*10)+" مصطلح إنجليزي بمعناه العربي، مصنف حسب الموضوع."],
+   ["#/topics","topics","ملخصات الأبواب",D.topics.length+" بابًا: كهرباء، ارتفاع، سقالات، رافعات، أماكن محصورة وغيرها."],
+   ["#/interview","interview","أسئلة المقابلات",D.questions.length+" سؤال مقسمة حسب الموضوع مع نموذج إجابة بالإنجليزي والعربي."],
+   ["#/sources","sources","المصادر والنطاق","من أين جاءت المعلومات وحدودها."]];
+  var g=el("div",{class:"grid"},cards.map(function(c){var a=el("a",{class:"card",href:c[0]},[el("div",{class:"ico ico-b"}),el("h3",{text:c[2]}),el("p",{text:c[3]})]);a.querySelector(".ico").appendChild(icon(c[1]));return a}));
+  var tg=el("div",{class:"grid"},D.topics.map(function(t){return el("a",{class:"card tcard",href:"#/topics/"+t.id},[ill(t.id,"thumb"),el("h3",{text:t.ar}),mixed("p",t.en)])}));
+  var hero=el("div",{class:"hero"},[el("div",{class:"hero-t"},[
+    el("h1",{text:"دليل الصحة والسلامة المهنية"}),
+    el("p",{class:"lead",text:"موقع تعليمي بالعربي للمصطلحات الإنجليزية، وملخصات الأبواب المهمة بالرسومات التوضيحية، وأسئلة المقابلات حسب كل موضوع. ابدأ بالبحث فوق أو اختر قسمًا."}),
+    el("div",{class:"bar"},[el("a",{class:"btn glow",href:"#/topics",text:"ابدأ الملخصات"}),el("a",{class:"btn ghost",href:"#/interview",text:"تدرّب على المقابلات"})])]),
+    ill("hero","hero-ill")]);
+  page([hero,
+    g,el("h2",{text:"الأبواب"}),tg,
+    el("div",{class:"warn",text:"ملاحظة: المحتوى تعليمي عام. الأرقام المذكورة أمثلة من معايير OSHA الأمريكية، وليست مراجعة للمتطلبات السعودية أو أي دولة أخرى. تحقق من اللوائح المطبقة وإجراءات الموقع."})]);
+}
+
+function glossary(sel){
+  var cat=store.get("gcat")||"all",term=null;
+  if(sel!=null){term=+sel;cat="all"}
+  var list=el("div"),count=el("div",{class:"count"}),local=el("input",{type:"search",id:"gf",placeholder:"فلتر داخل القاموس",style:"padding:8px 12px;border:1px solid #e1ddd3;border-radius:10px;font:inherit;min-width:200px"});
+  var chips=el("div",{class:"chips"});
+  function render(){list.textContent="";var f=norm(local.value.trim()),n=0;
+    D.glossary.forEach(function(g,i){
+      if(term!=null&&i!==term)return;
+      if(cat!=="all"&&g[0]!==cat)return;
+      if(f&&norm(g.join(" ")).indexOf(f)<0)return;n++;
+      list.appendChild(el("div",{class:"term"},[el("div",{class:"e en",text:g[1]}),mixed("div",g[2],"a"),mixed("div",g[3],"n"),el("div",{class:"tag",text:D.categories[g[0]]})]))});
+    count.textContent=n+" مصطلح";if(!n)list.appendChild(el("p",{text:"مفيش نتائج."}))}
+  function drawChips(){chips.textContent="";[["all","الكل"]].concat(Object.keys(D.categories).map(function(k){return [k,D.categories[k]]})).forEach(function(c){
+    chips.appendChild(el("button",{class:"chip",type:"button","aria-pressed":String(cat===c[0]),text:c[1],onclick:function(){cat=c[0];term=null;store.set("gcat",cat);drawChips();render()}}))})}
+  local.addEventListener("input",function(){term=null;render()});
+  drawChips();render();
+  page([el("h1",{text:"قاموس المصطلحات"}),el("p",{class:"lead",text:"المصطلحات الإنجليزية الشائعة في السفتي ومعناها بالعربي. المعنى المختصر للتعلم، والتعريف الرسمي في المعيار المطبق."}),chips,el("div",{class:"bar"},[local,count]),list]);
+}
+
+function topicList(){
+  page([el("h1",{text:"ملخصات الأبواب"}),el("p",{class:"lead",text:"ملخص لكل باب مهم مع رسمة توضيحية والتنبيهات والمراجع. اختر باب."}),
+   el("div",{class:"grid"},D.topics.map(function(t){return el("a",{class:"card tcard",href:"#/topics/"+t.id},[ill(t.id,"thumb"),el("h3",{text:t.ar}),mixed("p",t.en),mixed("p",t.intro.slice(0,110)+"...")])}))]);
+}
+function topicView(id){
+  var t=topicById[id];if(!t){return topicList()}
+  var i=D.topics.indexOf(t),prev=D.topics[i-1],next=D.topics[i+1],nodes=[
+    el("a",{href:"#/topics",text:"← كل الأبواب"}),
+    el("div",{class:"topic-hero"},[el("div",{class:"topic-hero-t"},[el("h1",{text:t.ar}),mixed("p",t.en,"lead"),mixed("p",t.intro)]),ill(id,"illus big")])];
+  t.sections.forEach(function(s){var sec=el("div",{class:"sec"},[el("h3",{text:s.h}),el("ul",{},s.items.map(function(it){return mixed("li",it)}))]);nodes.push(sec)});
+  nodes.push(mixed("div",t.warn,"warn"));
+  var related=D.questions.filter(function(q){return q[0]===id}).length;
+  nodes.push(el("p",{},[el("a",{class:"btn",href:"#/interview/"+id,text:"أسئلة المقابلات لهذا الباب ("+related+")"})]));
+  nodes.push(el("h3",{text:"المراجع"}));
+  nodes.push(el("ul",{class:"refs"},t.refs.map(function(r){return el("li",{},[el("a",{href:r[1],target:"_blank",rel:"noopener noreferrer"},[mixed("span",r[0])])])})));
+  nodes.push(el("div",{class:"bar"},[prev?el("a",{class:"btn alt",href:"#/topics/"+prev.id,text:"→ "+prev.ar}):null,next?el("a",{class:"btn alt",href:"#/topics/"+next.id,text:next.ar+" ←"}):null]));
+  page(nodes);
+}
+
+function interview(topic,focus){
+  var rev=store.get("rev")||{},cur=topic||"all",open={};
+  var list=el("div"),count=el("div",{class:"count"}),chips=el("div",{class:"chips"});
+  function render(){list.textContent="";var n=0,r=0;
+    D.questions.forEach(function(q,i){
+      if(cur!=="all"&&q[0]!==cur)return;n++;if(rev[i])r++;
+      var ans=el("div",{class:"qa"},[el("span",{class:"lab",text:"نموذج إجابة (English)"}),el("div",{class:"en",text:q[3],dir:"ltr",style:"display:block"}),el("span",{class:"lab",text:"الإجابة بالعربي"}),mixed("div",q[4]),
+        el("div",{class:"bar"},[el("button",{type:"button",class:"btn alt",text:rev[i]?"✓ تمت المراجعة (إلغاء)":"علّم كمراجَع",onclick:function(){rev[i]=!rev[i];store.set("rev",rev);render()}})])]);
+      var head=el("button",{type:"button",class:"qh","aria-expanded":String(!!open[i]),onclick:function(){open[i]=!open[i];render()}},[el("span",{class:"qn",text:"سؤال "+(n)+" · "+topicById[q[0]].ar}),el("span",{class:"qe en",text:q[1],dir:"ltr"}),el("span",{text:q[2]})]);
+      var box=el("div",{class:"q"+(rev[i]?" rev":""),id:"q"+i},[head]);if(open[i])box.appendChild(ans);list.appendChild(box)});
+    count.textContent=n+" سؤال · تمت مراجعة "+r;}
+  if(focus!=null){open[focus]=true;}
+  function drawChips(){chips.textContent="";[["all","كل الأبواب"]].concat(D.topics.map(function(t){return [t.id,t.ar]})).forEach(function(c){
+    chips.appendChild(el("button",{class:"chip",type:"button","aria-pressed":String(cur===c[0]),text:c[1],onclick:function(){cur=c[0];open={};drawChips();render();history.replaceState(null,"","#/interview"+(cur==="all"?"":"/"+cur))}}))})}
+  var showAll=el("button",{class:"btn alt",type:"button",text:"اظهر كل الإجابات",onclick:function(){D.questions.forEach(function(q,i){if(cur==="all"||q[0]===cur)open[i]=true});render()}});
+  var hideAll=el("button",{class:"btn alt",type:"button",text:"اخفِ الإجابات",onclick:function(){open={};render()}});
+  var rnd=el("button",{class:"btn",type:"button",text:"سؤال عشوائي",onclick:function(){var pool=[];D.questions.forEach(function(q,i){if(cur==="all"||q[0]===cur)pool.push(i)});var i=pool[Math.floor(Math.random()*pool.length)];open={};render();var b=document.getElementById("q"+i);b.scrollIntoView({block:"center"});b.querySelector("button").focus()}});
+  var reset=el("button",{class:"btn alt",type:"button",text:"مسح علامات المراجعة",onclick:function(){rev={};store.set("rev",rev);render()}});
+  drawChips();render();
+  page([el("h1",{text:"أسئلة المقابلات"}),el("p",{class:"lead",text:"أسئلة مقسمة حسب الباب. حاول تجاوب بصوت عالٍ بالإنجليزي قبل ما تفتح الإجابة. الإجابات نماذج، وجاوب بخبرتك وبإجراءات جهة العمل."}),chips,el("div",{class:"bar"},[rnd,showAll,hideAll,reset,count]),list]);
+  if(focus!=null){var b=document.getElementById("q"+focus);if(b)b.scrollIntoView({block:"center"})}
+}
+
+function sources(){
+  var all=[];D.topics.forEach(function(t){t.refs.forEach(function(r){all.push([t.ar,r])})});
+  page([el("h1",{text:"المصادر والنطاق"}),
+   el("div",{class:"warn",text:"هذا الموقع تعليمي. الأرقام والتعريفات مأخوذة بشكل أساسي من لوائح OSHA الأمريكية (الإنشاءات 29 CFR 1926 والصناعة العامة 29 CFR 1910) كأمثلة، ومعيار ISO 45001 للإطار العام. لم تتم مراجعتها مقابل أنظمة المملكة العربية السعودية أو أي جهة أخرى. تتغير اللوائح، فتأكد من النسخة الحالية ومن إجراءات جهة العمل."}),
+   el("p",{text:"استخدم الموقع للمذاكرة والتحضير للمقابلات فقط، وليس كإجراء تنفيذ لعمل فعلي. قبل أي عمل خطر، اتبع التصريح والإجراء المعتمد في موقعك ومشرف السلامة."}),
+   el("h2",{text:"المراجع حسب الباب"}),
+   el("ul",{class:"refs"},all.map(function(a){return el("li",{},[a[0]+": ",el("a",{href:a[1][1],target:"_blank",rel:"noopener noreferrer"},[mixed("span",a[1][0])])])})),
+   el("h2",{text:"ملاحظات"}),
+   el("ul",{},[el("li",{text:"تعريف الـ IDLH والتنفس في الأماكن المحصورة مبني على متطلبات OSHA، والأجواء ناقصة الأكسجين المصنفة IDLH لا يكفي فيها خط هواء وحده."}),el("li",{text:"المصطلحات العربية قد تختلف بين الدول والشركات. ما يظهر هنا ترجمة تعليمية شائعة."}),el("li",{text:"للإضافة أو التعديل: افتح ملفات js/data-*.js وعدّل القوائم."})])]);
+}
+
+function route(){
+  var h=location.hash.replace(/^#\/?/,""),p=h.split("/");box.hidden=true;
+  var sec=p[0]||"home";
+  document.querySelectorAll(".nav a").forEach(function(a){a.classList.toggle("on",a.getAttribute("data-nav")===sec)});
+  if(sec==="glossary")glossary(p[1]==="t"?p[2]:null);
+  else if(sec==="topics")p[1]?topicView(p[1]):topicList();
+  else if(sec==="interview")interview(p[1]&&topicById[p[1]]?p[1]:null,p[2]!=null?+p[2]:null);
+  else if(sec==="sources")sources();
+  else home();
+  main.focus({preventScroll:true});
+}
+window.addEventListener("hashchange",route);route();
+})();
+
+</script>
+</body>
+</html>
